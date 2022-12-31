@@ -1,0 +1,19 @@
+[
+  {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/dark/index.html",
+      "/blog/tail/index.html",
+      "/blog/renovate/index.html",
+      "/blog/plunge/index.html"
+    ]
+  },
+  {
+    "listing": "/project/index.html",
+    "items": [
+      "/project/storm/index.html",
+      "/project/box/index.html",
+      "/project/un/index.html"
+    ]
+  }
+]

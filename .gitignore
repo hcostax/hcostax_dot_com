@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+
+/.quarto/
+
+/*/*/references.bib
+/*/*/index_files
+/*/*/index_cache
