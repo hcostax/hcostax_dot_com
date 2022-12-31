@@ -1,6 +1,6 @@
 ---
 title: "Henrique Costa"
-image: profile.png
+image: profile.jpeg
 image-alt: "Portrait photo of the author with a transparent background"
 about:
   template: trestles
