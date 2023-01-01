@@ -2,50 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.hcostax.com/about/index.html</loc>
-    <lastmod>2022-12-31T22:39:40.159Z</lastmod>
+    <lastmod>2023-01-01T18:34:54.218Z</lastmod>
   </url>
   <url>
-    <loc>https://www.hcostax.com/blog/dark/index.html</loc>
-    <lastmod>2022-12-31T22:39:41.197Z</lastmod>
+    <loc>https://www.hcostax.com/blog/01_ceteris_paribus/index.html</loc>
+    <lastmod>2023-01-01T18:34:56.069Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hcostax.com/blog/02_matematizacao_economia/index.html</loc>
+    <lastmod>2023-01-01T18:34:58.087Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hcostax.com/blog/03_economistas_podem_ser_cientistas_de_dados/index.html</loc>
+    <lastmod>2023-01-01T18:34:59.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hcostax.com/blog/04_r_ou_python/index.html</loc>
+    <lastmod>2023-01-01T18:35:01.075Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.hcostax.com/blog/05_desafio_EconViz_01/index.html</loc>
+    <lastmod>2023-01-01T18:35:02.642Z</lastmod>
   </url>
   <url>
     <loc>https://www.hcostax.com/blog/index.html</loc>
-    <lastmod>2022-12-31T22:39:42.072Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hcostax.com/blog/plunge/index.html</loc>
-    <lastmod>2022-12-31T22:39:43.062Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hcostax.com/blog/renovate/index.html</loc>
-    <lastmod>2022-12-31T22:39:44.978Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.hcostax.com/blog/tail/index.html</loc>
-    <lastmod>2022-12-31T22:39:53.335Z</lastmod>
+    <lastmod>2023-01-01T18:35:03.637Z</lastmod>
   </url>
   <url>
     <loc>https://www.hcostax.com/index.html</loc>
-    <lastmod>2022-12-31T22:39:54.200Z</lastmod>
+    <lastmod>2023-01-01T18:35:04.632Z</lastmod>
   </url>
   <url>
     <loc>https://www.hcostax.com/LICENSE.html</loc>
-    <lastmod>2022-12-31T22:39:55.180Z</lastmod>
+    <lastmod>2023-01-01T18:35:05.923Z</lastmod>
   </url>
   <url>
     <loc>https://www.hcostax.com/project/box/index.html</loc>
-    <lastmod>2022-12-31T22:40:10.614Z</lastmod>
+    <lastmod>2023-01-01T18:35:19.936Z</lastmod>
   </url>
   <url>
     <loc>https://www.hcostax.com/project/index.html</loc>
-    <lastmod>2022-12-31T22:40:11.481Z</lastmod>
+    <lastmod>2023-01-01T18:35:21.077Z</lastmod>
   </url>
   <url>
     <loc>https://www.hcostax.com/project/storm/index.html</loc>
-    <lastmod>2022-12-31T22:40:17.157Z</lastmod>
+    <lastmod>2023-01-01T18:35:27.785Z</lastmod>
   </url>
   <url>
     <loc>https://www.hcostax.com/project/un/index.html</loc>
-    <lastmod>2022-12-31T22:40:27.648Z</lastmod>
+    <lastmod>2023-01-01T18:35:41.463Z</lastmod>
   </url>
 </urlset>

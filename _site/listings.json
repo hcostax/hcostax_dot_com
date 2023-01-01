@@ -2,10 +2,11 @@
   {
     "listing": "/blog/index.html",
     "items": [
-      "/blog/dark/index.html",
-      "/blog/tail/index.html",
-      "/blog/renovate/index.html",
-      "/blog/plunge/index.html"
+      "/blog/05_desafio_EconViz_01/index.html",
+      "/blog/04_r_ou_python/index.html",
+      "/blog/03_economistas_podem_ser_cientistas_de_dados/index.html",
+      "/blog/02_matematizacao_economia/index.html",
+      "/blog/01_ceteris_paribus/index.html"
     ]
   },
   {

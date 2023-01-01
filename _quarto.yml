@@ -9,7 +9,7 @@ website:
   title: "Henrique Costa"
   favicon: images/favicon.png
   site-url: https://www.hcostax.com
-  description: "A data science and machine learning blog with the tidyverse at its {{< fa regular heart >}}"
+  description: "Um blog que mistura riscos, ciência de dados e aprendizado de máquina com tidyverse e tidymodels feito com o {{< fa regular heart >}}"
   twitter-card: true
   open-graph: true
   navbar:

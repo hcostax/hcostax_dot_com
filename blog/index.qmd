@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-subtitle: "A few brief notes along the way"
+subtitle: "Algumas breves notas ao longo do caminho"
 listing:
   contents: .
   fields: [image, date, title, reading-time, description]

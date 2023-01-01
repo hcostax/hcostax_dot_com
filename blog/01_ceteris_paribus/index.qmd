@@ -1,0 +1,83 @@
+---
+title: "A condição Ceteris Paribus"
+author: "Henrique Costa"
+date: "2018-09-16"
+categories: [Economia, Teoria]
+description: "Uma reflexão sobre relações causais, empíricas ou de lógica indutiva"
+image: "feature.jpg"
+---
+
+![](feature.jpg)
+
+Irei expor aqui, algumas reflexões pessoais sobre um conceito que é considerado muito simples e talvez comum em economia, mas que é taxado como o ápice da ignorância por fazer uma suposição que não pode ser observada na realidade, mas que ao meu ver é um ledo engano. O conceito: _ceteris paribus_, ou melhor dizendo “a condição _ceteris paribus_”.
+
+Bem, você já tentou imaginar o significado de _ceteris paribus?_ A ideia é um tanto quanto simplista, e significa **“todo o mais é constante”** ou **“mantidas inalteradas todas as outras coisas”**. Nada de novo sobre a terra, pois economistas, estudantes e entusiastas conhecem bem essa condição, e aprendem no mundo acadêmico que em análises econômicas sempre rola essa coisa de _ceteris paribus_.
+
+Examinar um fato sob uma condição de que um efeito **X**, _ceteris paribus_ teve uma causa **Y**, ou melhor dizendo, que um efeito específico ocorre oriundo de uma causa isolada sem que outras potenciais causas possam interferir ou não tenha nenhum envolvimento. 
+
+Se pensar bem a fundo sobre esta afirmação, parece um pouco absurdo tal condição, pois na realidade nunca um efeito específico tem uma causa isolada, pois se trata de um olhar estático de eventos dinâmicos. Muitos são as críticas sobre tal suposição, mas a maioria são fundamentadas em má interpretação da condição _ceteris paribus_.
+
+Entender o sentido literal do termo não te faz um usuário especialista de tal. É fato que observar ou estudar algo e ter que dizer que se tudo o mais é constante, transpassa a ideia de que os resultados podem ser irrealistas. Porém, Você precisa abstrair para entender. Será que é possível essa condição acontecer? Como? E quando ocorre?
+
+Caso queira fazer um estudo metodologicamente profundo para compreender as aplicações científicas, favor consumir o **Capítulo 2** desta obra prima:
+
+> _Schlicht, E. (1985). [Isolation and Aggregation in Economics](https://epub.ub.uni-muenchen.de/3/1/schlicht_isolation.pdf). [S.l.]: Springer Verlag. ISBN 0-387-15254-7_.
+
+Para ilustrar irei simular uma situação e usar um exemplo onde preparo o meu café matinal, e assim por suposição, irei adoça-lo (pois açúcar não é bem vindo no meu café). Então tenho como ingredientes: água, açúcar, e o pó de café 100% arábica (o meu preferido). Sabemos que para preparar o café, a grosso modo, basta misturar todos os ingredientes. Claro, desde que certos ingredientes estejam em condições para tal, como no caso da água que deve atingir uma temperatura (considerada ideal) de preparo próxima dos 90°C, mas sempre rola aquela dúvida clássica: qual a quantidade de açúcar seria ideal para adoçar meu café?
+
+Em modelos econométricos tem-se uma metodologia semelhante: para estimar uma variável **Y** é preciso misturar os "efeitos" de variáveis **X**, desde que algumas variáveis **X** atendam certas condições, pois haverá momentos em que será necessário aplicar transformações nas variáveis, passando de nível para logarítmico, aplicar diferenças e entre outras. Assim como é o processo da modificação da temperatura da água.
+
+Para solucionar este problema, um economista comum dirá: 
+
+> Humm, Depende! 
+
+Mas um Cientista dirá: 
+
+> Para uma análise _ex-ante_, será necessário testar hipóteses! 
+
+Primeiramente traçamos duas hipóteses de que será preparado 1 litro de café, e assim são utilizados 1 litro de água (em temperatura de 90°C), 4 colheres de pó de café (pois gosto de café forte), sendo assim podemos dizer o seguinte:
+
+  - Como **hipótese alternativa**, o valor de açúcar é zero, supostamente a presença de açúcar na bebida é praticamente nula, assim a bebida “precisa ser adoçada”.
+  
+  - Como **hipótese nula**, o valor de açúcar é diferente de zero, onde supostamente é adicionado no mínimo uma colher (ou cubo) de açúcar, pois estamos curiosos sobre os efeitos marginais positivos, assim a bebida está sendo adoçada.
+
+Nós estamos interessados em inferir sobre a **hipótese nula**, pois é a partir dela que se considera adoçar a bebida, uma vez que a hipótese alternativa ocorre, basta aplicar a variável **açucar** (para um melhor ajuste do modelo) até o momento em que a bebida esteja adoçada. 
+
+Agora podemos identificar quais são os efeitos marginais que o aumento de açúcar pode causar na bebida, e uma ironia bem curiosa é que estamos aqui buscando uma solução de otimização. Testando a variação de açúcar afim de buscar um ponto ótimo de equilíbrio, ou seja, onde a adição de açúcar pode levar a um ponto de equilíbrio da sacarose com a acidez do café tornando a bebida adoçada ao gosto do consumidor.
+
+Teoricamente, você coloca uma colher de açúcar e experimenta; se não ficar no ponto desejado, você pode adicionar mais um pouco e experimentar novamente; e assim sucessivamente até chegar no sabor em que lhe mais agrada. Em outras palavras, depois de ter misturado os ingredientes, será ajustado somente a quantidade de açúcar, mantendo fixas as proporções ou quantidades dos outros ingredientes. É nesse “manter fixo” que a condição _Ceteris Paribus_ ocorre, ou seja, **“manter inalteradas todas as outras coisas”**.
+
+É exatamente isso que a condição _ceteris paribus_ significa: manter algumas variáveis fixas em suas proporções e quantidades ou constantes (nesse caso, a água e o pó de café depois de misturados e feito a infusão) e alterando apenas o açúcar, para entender o efeito que o açucar causa sobre a variável **Y** (o café propriamente dito). 
+
+Uma das primeiras aparições do uso deste termo em economia, esta contida na obra do economista Richard Cantillon do século XVII, com o título: 
+
+> _CANTILLON, Richard. [Ensaio sobre a natureza do comércio em geral](http://www.segestaeditora.com.br/download/ensaio_1.pdf). Curitiba: Segesta Editora, 2002_.
+
+Na ciência econômica esse conceito é bastante usado em modelos, principalmente da teoria neoclássica, pois permite interpretar de forma representativa os eventos de causa e efeito no mundo real.
+
+Imagine ter que lidar com o enorme e crescente fluxo de informações que são geradas todos os dias, a todo momento? Todos enlouqueceriam!!! Então, a teoria econômica simplifica a análise para que seja possível encontrar soluções para os problemas: é como se desconsiderar algumas informações (ou considerar que elas são constantes, que não se alteram ou não altera a sua análise) e, em seguida analisa os efeitos de outras informações.
+
+Não pense que isso é um absurdo, ou que é irreal, se por algum instante passou pela sua cabeça esse pensamento, por favor reveja-o imediatamente, pois a teoria econômica é composta de muita, mas muita observação, dedução e testes dos eventos de causa e efeito do mundo real, e por isso é reconhecida como ciência nos dias de hoje.
+
+Um outro exemplo bem interessante em que consegui observar o efeito desta condição, é no mercado financeiro, a teoria de diversificação de portfólio garante a diminuição de exposição do investidor ao risco não sistêmico, ou seja, desconsiderar o risco não sistêmico e mante-lo fixo próximo de nulo pode ser um efeito da condição _ceteris paribus_, pois o investidor diversifica seus investimentos para se proteger da oscilação dos tais ativos tentando manter o risco não sistêmico no mínimo possível, e quando alcançado uma correlação mais próxima de zero, assume que esta livre de risco não sistêmico e assim altera suas posições no mercado com base nos riscos sistêmicos. Os exemplos reais que utilizam essa condição são tantos que vai além de adoçar o meu café.
+
+A condição _ceteris paribus_ esta presente no nosso cotidiano, em quase tudo é possível encontra-la, mas haverá céticos que dirão: _“mas na realidade não se mantem nada fixo ou constante”_, ou até mesmo _“isso faz parte da ideia de equilíbrio geral, e no geral é irreal, porque o equilíbrio não é empírico”_, pois bem, o mundo real é dinâmico, mas na minha humilde opnião, o mundo sempre esteve em um equilíbrio natural, o dinamismo do mundo real nada mais é do que equilíbrios interagindo simultaneamente, então logo, a condição _ceteris paribus_ pode sim fazer algum sentido real e palpável.
+
+Enfim, a condição _ceteris paribus_ significa que podemos manter fixas ou constantes algumas variáveis para analisar somente o que interessa; essa condição é muito útil para criarmos modelos econométricos usados para calcular e interpretar melhor os fenômenos do mundo real.
+
+Espero que tenha cumprido a minha missão de explorar de forma análoga a condição de _ceteris paribus_ para um melhor entendimento. Nas próximas publicações irei tratar de modelos na ciência econômica, para explicar o porquê desta ciência estar tão repleta de aplicações matemática e estatísticas.
+
+
+
+Adptado do [original](https://medium.com/the-empirical-mode/a-condi%C3%A7%C3%A3o-ceteris-paribus-para-ado%C3%A7ar-meu-caf%C3%A9-7da9b9326604).
+
+
+::: {.callout-note}
+
+# Ei! 👋, você achou meu trabalho útil? Considere me comprar um café ☕, clicando aqui 👇🏻 
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=hcostax&button_colour=5F7FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
+
+:::
+
+
+

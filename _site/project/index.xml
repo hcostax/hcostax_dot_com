@@ -8,7 +8,7 @@
 <title>Henrique Costa</title>
 <link>https://www.hcostax.com/project/index.html</link>
 <atom:link href="https://www.hcostax.com/project/index.xml" rel="self" type="application/rss+xml"/>
-<description>A data science and machine learning blog with the tidyverse at its {{&lt; fa regular heart &gt;}}</description>
+<description>Um blog que mistura riscos, ciência de dados e aprendizado de máquina com tidyverse e tidymodels feito com o {{&lt; fa regular heart &gt;}}</description>
 <generator>quarto-1.2.280</generator>
 <lastBuildDate>Sun, 02 Aug 2020 03:00:00 GMT</lastBuildDate>
 <item>
