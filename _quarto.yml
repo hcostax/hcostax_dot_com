@@ -17,10 +17,10 @@ website:
     logo-alt: "A box and whisker plot icon"
     title: false
     right:
-      - text: Projects
-        href: project/index.qmd
-      - text: Toolbox
-        href: project/box/index.qmd
+      # - text: Projects
+      #   href: project/index.qmd
+      # - text: Toolbox
+      #   href: project/box/index.qmd
       - text: Blog
         href: blog/index.qmd
       - text: About
