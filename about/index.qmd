@@ -24,7 +24,7 @@ title-block-banner: true
 
 Sou Mestre em Economia Aplicada, e entusiasta das análises de validação empirica. Tomador de risco nato, tenho "preferência revelada" por café especial ☕, pizza🍕, microeconomia, econometria, microeconometria e R.
 
-Meu lema é: toda a intenção da economia empírica é forçar a teoria a descer para a Terra. - *George Akerlof See More*
+Meu lema é: toda a intenção da economia empírica é forçar a teoria a descer para a Terra. - *George Akerlof*
 
 -   👨‍💼 Atualmente estou ocupando uma posição de professor orientador no MBA (Data Science) da Pecege ESALQ/USP;\
 
