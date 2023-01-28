@@ -9,7 +9,7 @@
 <link>https://www.hcostax.com/blog/index.html#category=R</link>
 <atom:link href="https://www.hcostax.com/blog/index-r.xml" rel="self" type="application/rss+xml"/>
 <description>Um blog que mistura riscos, ciência de dados e aprendizado de máquina com tidyverse e tidymodels feito com o {{&lt; fa regular heart &gt;}}</description>
-<generator>quarto-1.2.280</generator>
+<generator>quarto-1.2.313</generator>
 <lastBuildDate>Sat, 20 Feb 2021 03:00:00 GMT</lastBuildDate>
 <item>
   <title>Reproduzindo gráfico do Economista Visual - Valor da cesta básica</title>
