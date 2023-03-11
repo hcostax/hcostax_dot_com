@@ -1,12 +1,78 @@
 ---
-page-layout: custom
-comments: false
+title: "Henrique Costa"
+image: images/profile.jpeg
+about: 
+  template: trestles
+  image-shape: rounded
+  image-width: 16em
+  links:
+    - icon: instagram
+      # text: Instagram
+      href: https://www.instagram.com/hcostax
+    - icon: linkedin 
+      # text: LinkedIn
+      href: https://www.linkedin.com/in/hcostax/
+    - icon: twitter 
+      # text: Twitter
+      href: https://twitter.com/hcostax
+    # - icon: github 
+    #   text: GitHub
+    #   href: https://github.com/samanthacsik
+    - icon: envelope 
+      # text: Email
+      href: mailto:henrique@outlook.sg
 ---
 
-::: light-mode
-![](images/landing%20light.png)
-:::
+### Coffee and Risk! ☕    
 
-::: dark-mode
-![](images/landing%20dark.png)
-:::
+<p class="topbr">
+Sou Mestre em Economia Aplicada, e entusiasta das análises de validação empirica. Tomador de risco nato, tenho "preferência revelada" por café especial ☕, pizza🍕, microeconomia, econometria, microeconometria e R.
+
+Meu lema é: toda a intenção da economia empírica é forçar a teoria a descer para a Terra. - *George Akerlof*
+
+
+-   👨‍💼 Atualmente estou ocupando uma posição de professor orientador no MBA (Data Science) da Pecege ESALQ/USP;\
+
+-   👨‍💼 Também ocupo uma posição em Estratégia, Riscos de Crédito e Rentabilidade em uma proptech;\
+
+-   📜 Habilidades: [tidyverse](https://www.tidyverse.org) e [tidymodels](https://www.tidymodels.org), RDataViz e Modelagem Econométrica;
+
+-   👽 Em constante aperfeiçoamento dos conhecimentos em Econometria;\
+
+-   🛸 Em constante aperfeiçoamento dos conhecimentos em Data Science e Machine Learning;\
+
+-   💡 No meu tempo livre (quando existe), gosto de jogar, assistir séries e ler mangá.
+</p>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+### Educação
+
+<div class="topbr">
+<p class="custom-subtitle">`r fontawesome::fa("graduation-cap", fill = "#98A08D", a11y = "sem")` **Mestrado em Economia Aplicada, 2019**</p>  
+<p class="custom-subtitle2">Universidade Federal de Mato Grosso</p>
+
+<p class="custom-subtitle">`r fontawesome::fa("graduation-cap", fill = "#98A08D", a11y = "sem")` **Bacharel em Ciências Econômicas, 2017**</p>  
+<p class="custom-subtitle2">Universidade Federal de Mato Grosso</p>
+</div>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+### Experiência
+
+<div class="topbr">
+<!-- <p class="custom-subtitle">`r fontawesome::fa("chalkboard-teacher", fill = "#98A08D", a11y = "sem")` **Risco de Crédito, Estratégia e Rentabilidade**</p>    -->
+<!-- <p class="custom-subtitle2">Quinto Andar</p>   -->
+
+<p class="custom-subtitle">`r fontawesome::fa("chart-bar", fill = "#98A08D", a11y = "sem")` **Risco de Crédito, Estratégia e Rentabilidade**</p>   
+<p class="custom-subtitle2">Quinto Andar</p>  
+
+<p class="custom-subtitle">`r fontawesome::fa("chart-bar", fill = "#98A08D", a11y = "sem")` **Riscos Financeiros e Regulatórios**</p>    
+<p class="custom-subtitle2">Banco Crefisa</p>
+
+<p class="custom-subtitle">`r fontawesome::fa("chart-bar", fill = "#98A08D", a11y = "sem")` **Riscos em Finanças Estruturadas**</p>    
+<p class="custom-subtitle2">Liberum Ratings</p>
+
+</div>
+
+

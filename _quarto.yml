@@ -1,63 +1,58 @@
 project:
   type: website
-  resources: project/wood/appfiles/
-
-execute:
-  freeze: auto
+  output-dir: docs
 
 website:
-  title: "Henrique Costa"
-  favicon: images/favicon.png
-  site-url: https://www.hcostax.com
-  description: "Um blog que mistura riscos, ciência de dados e aprendizado de máquina com tidyverse e tidymodels feito com o {{< fa regular heart >}}"
-  twitter-card: true
-  open-graph: true
+  # cookie-consent: 
+  #   type: express 
+  #   style: headline
+  #   palette: dark
+  favicon: images/logo-light.png
+  # google-analytics: 
+  #   tracking-id: "UA-242992767-1"
+  #   anonymize-ip: true
+  # title: "samantha csik"
   navbar:
-    logo: images/logo-light.png
-    logo-alt: "A box and whisker plot icon"
     title: false
+    logo: images/logo-light.png
+    logo-alt: "A cup of coffe in black color with a crown above and two yellow gems"
     right:
-      # - text: Projects
-      #   href: project/index.qmd
-      # - text: Toolbox
-      #   href: project/box/index.qmd
-      - text: Blog
-        href: blog/index.qmd
-      - text: About
-        href: about/index.qmd
-      - icon: rss
-        href: project/index-R.xml
-      - icon: github
-        href: https://github.com/hcostax/hcostax_dot_com
-  page-footer:
-    border: false
-    left: "Published with [Quarto](https://quarto.org/) v<?quarto.version?> | Hosted by [{{< iconify simple-icons netlify >}}](https://www.netlify.com)"
-    right: "© 2023 [Henrique Costa](/about) [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+      - href: index.qmd
+        text: início
+      # - href: about.qmd
+      #   text: sobre
+      # - href: talks_workshops.qmd
+      #   text: talks & workshops
+      - href: posts.qmd
+        text: blog
+      # - href: resources.qmd
+      #   text: recursos
+      # - href: CV/SCsik_CV.pdf
+      #   text: cv
+      # - icon: github
+      #   href: https://github.com/samanthacsik/samanthacsik.github.io
+      # - icon: twitter
+      #   href: https://twitter.com/SamanthaCsik
+  page-footer: 
+    background: light
+    left: 
+      - "Copyright 2023, Henrique Costa"
+    right: 
+      - icon: instagram
+        href: https://www.instagram.com/hcostax
+      - icon: linkedin
+        href: https://www.linkedin.com/in/hcostax/
+  reader-mode: true
+  # repo-url: https://github.com/samanthacsik/samanthacsik-quarto-website
+  # repo-actions: [edit, issue]
 
 format:
   html:
-    theme:
-      light: [flatly, scss/light.scss]
-      dark: [darkly, scss/dark.scss]
-    css: scss/styles.css
-    code-link: true
-    link-external-icon: true
-    link-external-newwindow: true
-    smooth-scroll: true
-    highlight-style: gruvbox
-    df-print: kable
-    comments:
-      giscus:
-        repo: hcostax/hcostax_dot_com
-        category: "Comments"
-        mapping: "pathname"
-        reactions-enabled: true
-        loading: lazy
-        input-position: "bottom"
-        theme: "transparent_dark"
+    page-layout: full
+    theme: 
+      - green_theme.scss
+    # css: styles.css
+    mainfont: Nunito
+    toc: true
 
-editor: visual
-
-filters:
-  - quarto-version.lua
 
