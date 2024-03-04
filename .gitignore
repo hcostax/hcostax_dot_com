@@ -52,5 +52,7 @@
 #/_site/
 #/.quarto/
 
-/.quarto/
+#/.quarto/
 .Rproj.user
+
+/.quarto/
