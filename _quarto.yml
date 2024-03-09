@@ -4,6 +4,13 @@ project:
     - CNAME
 
 website:
+  cookie-consent:
+    type: express
+    style: headline
+    palette: dark
+  google-analytics:
+    tracking-id: "G-6C0FRWPTTF"
+    anonymize-ip: true
   title: "*p(coffee) < 0.05*"
   site-url: https://hcostax.com
   description: "Quant Risk Management (Finance)"
