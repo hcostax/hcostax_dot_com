@@ -21,7 +21,7 @@ website:
   twitter-card: true
   comments:
     utterances:
-      repo: quarto-dev/quarto-docs
+      repo: hcostax/hcostax_dot_com
  
   navbar:
     logo: assets/img/favicon/logo.png

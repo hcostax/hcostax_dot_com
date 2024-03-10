@@ -5,6 +5,8 @@ subtitle: "Quant Risk Management (Finance)"
 image: assets/img/hcostax/family.jpeg
 image-alt: "Me, Me, Me"
 
+comments: false
+  
 twitter-card:
     title: Henrique Costa
     description: |
