@@ -85,5 +85,8 @@
   },
   "blog/r_or_python/index.qmd": {
     "index.html": "d8b7bb4c"
+  },
+  "blog/copy_test/index.qmd": {
+    "index.html": "cbaa8fce"
   }
 }
