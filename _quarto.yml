@@ -19,7 +19,9 @@ website:
   page-navigation: true
   back-to-top-navigation: false
   twitter-card: true
-  comments: false
+  comments:
+    utterances:
+      repo: quarto-dev/quarto-docs
  
   navbar:
     logo: assets/img/favicon/logo.png

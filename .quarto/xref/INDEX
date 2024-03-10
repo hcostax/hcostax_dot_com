@@ -1,0 +1,89 @@
+{
+  "404.qmd": {
+    "404.html": "5555bc4d"
+  },
+  "blog/2020-04-14-football-analytics/index.qmd": {
+    "index.html": "7e1f84f9"
+  },
+  "blog/2022-01-17-making-myself-accountable/index.qmd": {
+    "index.html": "b9ec1f9f"
+  },
+  "blog/2022-02-19-make-more-packages/index.qmd": {
+    "index.html": "7619e29c"
+  },
+  "blog/2022-05-07-combining-tidymodels-and-caret/index.qmd": {
+    "index.html": "e1241326"
+  },
+  "blog/2022-05-10-learning-bayesian-statistics/index.qmd": {
+    "index.html": "36aa3486"
+  },
+  "blog/2022-09-11-setting-up-hugo-website-with-quarto/index.qmd": {
+    "index.html": "bb93970c"
+  },
+  "blog/2022-09-17-rendering-mermaid-diagrams-using-quarto-and-hugo/index.qmd": {
+    "index.html": "2d8f5d03"
+  },
+  "blog/2022-11-01-multilevel-model-r-cheatsheet/index.qmd": {
+    "index.html": "61a1bbef"
+  },
+  "blog/2024-02-22-football-ratings-using-desirability-functions/index.qmd": {
+    "index.html": "68864dec"
+  },
+  "blog/index.qmd": {
+    "index.html": "be9fa2ba"
+  },
+  "consultancy/index.qmd": {
+    "index.html": "3054cc76"
+  },
+  "contact.qmd": {
+    "contact.html": "9f4c218b"
+  },
+  "cv/index.qmd": {
+    "index.html": "c1f817ea"
+  },
+  "index.qmd": {
+    "index.html": "d2df4bd6"
+  },
+  "license.qmd": {
+    "license.html": "29b115ee"
+  },
+  "projects/index.qmd": {
+    "index.html": "2e6b67ef"
+  },
+  "blog/01_ceteris_paribus/index.qmd": {
+    "index.html": "662a1009"
+  },
+  "blog/02_matematizacao_economia/index.qmd": {
+    "index.html": "25b8a3da"
+  },
+  "blog/03_economistas_podem_ser_cientistas_de_dados/index.qmd": {
+    "index.html": "2e5510d0"
+  },
+  "blog/04_desafio_EconViz_01/index.qmd": {
+    "index.html": "12607971"
+  },
+  "blog/05_r_ou_python/index.qmd": {
+    "index.html": "698d2ea3"
+  },
+  "blog/06_risk_intro/index.qmd": {
+    "index.html": "f9413584"
+  },
+  "blog/ceteris_paribus/index.qmd": {
+    "index.html": "a9e50b98"
+  },
+  "blog/desafio_EconViz_01/index.qmd": {
+    "index.html": "64287992"
+  },
+  "blog/economists_in_data_science/index.qmd": {
+    "index.html": "5e4ad6d3"
+  },
+  "blog/maths_economics/index.qmd": {
+    "index.html": "61f9c903"
+  },
+  "blog/risk_intro/index.qmd": {
+    "index.html": "ff90e21c"
+  },
+  "blog/r_or_python/index.qmd": {
+    "index.html": "d8b7bb4c"
+  }
+}

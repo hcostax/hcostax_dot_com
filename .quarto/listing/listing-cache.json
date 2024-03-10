@@ -1,0 +1,9 @@
+{
+  "listingMap": {
+    "blog\\index.qmd": [
+      "**/index.qmd",
+      "**/index.markdown",
+      "**/index.md"
+    ]
+  }
+}
