@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7256a82e-e340-4ff3-817a-b74a275d57c5/deploy-status)](https://app.netlify.com/sites/hcostax/deploys)
 
-*This website is based on [paulrjohnson.net](https://paulrjohnson.net/) *
+*This website is based on [paulrjohnson.net](https://paulrjohnson.net/)*
 
 # Website & Blog
 
