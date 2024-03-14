@@ -20,7 +20,7 @@ about:
   links:
     # - icon: mastodon
     #   aria-label: Mastodon
-    #   href: https://fosstodon.org/@paulj1989
+    #   href: https://fosstodon.org/@hcostax
     - icon: linkedin
       aria-label: LinkedIn
       href: https://linkedin.com/in/hcostax
@@ -30,12 +30,10 @@ about:
     - icon: instagram
       aria-label: Instagram
       href: https://www.instagram.com/hcostax/
-    # - text: "{{< iconify fa6-brands kaggle >}}"
-    #   aria-label: Kaggle
-    #   href: https://kaggle.com/paulrjohnson
     # - text: "{{< iconify fa6-brands google-scholar >}}" 
     #   aria-label: Google Scholar
-    #   href: https://scholar.google.com/citations?user=Op4yo3YAAAAJ&hl=en
+    #   href: https://scholar.google.com/citations?user=
+    
 page-layout: full
 
 execute: 
@@ -47,7 +45,7 @@ header-includes: >
   <link rel="stylesheet" href="assets/index.css">
 resources:
   - assets/index.css
-include-in-header: assets/umami.html
+
 ---
 
 <br><br><br><br>
@@ -69,55 +67,3 @@ At my house, my [wife](https://www.instagram.com/kedmathaynara/) and I play with
 
 :::
 
-```{r import-manual-redirects}
-
-manual_redirects <-
-  readr::read_table(here::here("static", "_manualredirects.txt"),
-                    col_names = FALSE) |> 
-  dplyr::mutate(redirect = paste0(X1, " ", X2, " ", X3))
-
-manual_redirects <- manual_redirects$redirect
-```
-
-```{r write-redirects}
-
-# adapted from Silvia Canelón: https://silviacanelon.com/blog/2023-09-29-hello-quarto/#setting-up-redirects
-# who adapted from Tom Mock: https://github.com/jthomasmock/themockup-blog/blob/master/index.qmd#L27C1-L48C4
-# who adapted from Danielle Navarro: https://blog.djnavarro.net/porting-to-quarto/#netlify-redirects
-
-# function: obtain list of post paths
-list_paths <- function(folder) {
-  posts <-
-    list.dirs(
-    path = c(here::here(folder)),
-    full.names = FALSE,
-    recursive = FALSE
-    ) |> 
-    tibble::as_tibble_col(column_name = "path")  |>
-    dplyr::mutate(folder = folder)
-}
-
-# list post paths in blog folder
-posts <- purrr::map("blog", list_paths) |> purrr::list_rbind()
-
-# extract short paths and create redirects
-posts <-
-  posts |> 
-  dplyr::mutate(
-    # extract the year-slugs
-    short_path = stringr::str_remove(path, "(?!\\-)\\d{4}-\\d{2}-\\d{2}-"),
-    # create short paths
-    short_path = paste0(folder, "/", short_path),
-    # create lines to insert to a netlify _redirect file
-    redirects = paste0("/", short_path, " ", "/", folder, "/", path)
-    )
-
-# extract redirects
-redirects <- posts$redirects
-
-# combine with manual redirects
-redirects_combined <- c(manual_redirects, redirects)
-
-# write the _redirect file
-writeLines(redirects_combined, here::here("_site", "_redirects"))
-```

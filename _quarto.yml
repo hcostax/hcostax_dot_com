@@ -30,7 +30,7 @@ website:
     logo: assets/img/favicon/logo.png
     tools:
     # - icon: github
-    #   href: https://www.github.com/paulj1989/paulrjohnson.net
+    #   href: https://www.github.com/
     right:
       - text: Blog
         aria-label: "Blog"
@@ -47,7 +47,7 @@ website:
   
   page-footer:  
     left: >-
-     &#169; 2024 Henrique Costa &#8729; Made with [Quarto](https://quarto.org)
+     &#169; 2024 Henrique Costa &#8729; Made with [Quarto](https://quarto.org) based on [paulrjohnson.net](https://paulrjohnson.net/)
 
     right: 
       - text: "Contact"
@@ -61,7 +61,7 @@ format:
   html:
     theme: 
       - cosmo
-      - assets/paul-theme-light.scss
+      - assets/theme-light.scss
     highlight-style: github
     # set code-link to false until gh actions issues fixed
     code-link: false
@@ -80,4 +80,3 @@ execute:
   error: false
   freeze: auto
 
-# include-in-header: assets/umami.html
