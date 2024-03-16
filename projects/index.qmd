@@ -1,6 +1,8 @@
 ---
 title: Project Portfolio
 subtitle: Selected Works from Quant Finance, Risk Management & Academia
+
+comments: false
 ---
 
 ## Quant Finance and Risk Management  {{< fa code-fork >}}

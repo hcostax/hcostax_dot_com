@@ -5,10 +5,11 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>*p(coffee) &lt; 0.05*</title>
-<link>https://hcostax.com/blog/</link>
-<atom:link href="https://hcostax.com/blog/index.xml" rel="self" type="application/rss+xml"/>
-<description>This is my blog where I share fun facts, thoughts, and the stupid things I&#39;ve done in hopes that you won&#39;t have to go down the same regrettable path. &lt;/br&gt;</description>
+<title>Henrique Costa blog</title>
+<link>https://hcostax.com/atom.html</link>
+<atom:link href="https://hcostax.com/atom.xml" rel="self" type="application/rss+xml"/>
+<description>Henrique Costa blog</description>
+<language>en</language>
 <generator>quarto-1.4.550</generator>
 <lastBuildDate>Sun, 27 Aug 2023 03:00:00 GMT</lastBuildDate>
 <item>

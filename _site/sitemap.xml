@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hcostax.com/projects/index.html</loc>
-    <lastmod>2024-03-02T19:28:25.619Z</lastmod>
+    <lastmod>2024-03-16T13:36:27.395Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/index.html</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://hcostax.com/contact.html</loc>
-    <lastmod>2024-02-25T17:10:01.476Z</lastmod>
+    <lastmod>2024-03-16T13:37:32.478Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/blog/r_or_python/index.html</loc>
@@ -29,6 +29,10 @@
     <lastmod>2024-02-25T19:27:55.363Z</lastmod>
   </url>
   <url>
+    <loc>https://hcostax.com/atom.html</loc>
+    <lastmod>2024-03-16T13:39:05.977Z</lastmod>
+  </url>
+  <url>
     <loc>https://hcostax.com/blog/desafio_EconViz_01/index.html</loc>
     <lastmod>2024-02-25T20:26:22.018Z</lastmod>
   </url>
@@ -42,11 +46,11 @@
   </url>
   <url>
     <loc>https://hcostax.com/consultancy/index.html</loc>
-    <lastmod>2024-02-25T17:31:43.240Z</lastmod>
+    <lastmod>2024-03-16T13:37:44.547Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/cv/index.html</loc>
-    <lastmod>2024-02-25T18:23:58.831Z</lastmod>
+    <lastmod>2024-03-16T13:37:17.355Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/license.html</loc>

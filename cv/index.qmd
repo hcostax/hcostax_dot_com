@@ -2,10 +2,12 @@
 title: Henrique Costa
 subtitle: Quant Finance and Risk Management | Strategy, Credit Risk and Profitability
 pagetitle: "Curriculum Vitae | Henrique Costa"
+
 header-includes: >
   <link rel="stylesheet" href="../assets/cv.css">
 resources:
   - ../assets/cv.css
+comments: false
 ---
 
 ## Education  {{< fa graduation-cap >}}

@@ -88,5 +88,8 @@
   },
   "blog/copy_test/index.qmd": {
     "index.html": "cbaa8fce"
+  },
+  "atom.qmd": {
+    "atom.html": "6f7d5642"
   }
 }

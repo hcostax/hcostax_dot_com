@@ -12,6 +12,8 @@ header-includes: >
   <link rel="stylesheet" href="../assets/contact.css">
 resources:
   - ../assets/contact.css
+
+comments: false
 ---
 
 ::: {.grid}
