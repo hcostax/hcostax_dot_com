@@ -33,7 +33,8 @@ about:
     # - text: "{{< iconify fa6-brands google-scholar >}}" 
     #   aria-label: Google Scholar
     #   href: https://scholar.google.com/citations?user=
-    
+
+feed: true
 page-layout: full
 
 execute: 

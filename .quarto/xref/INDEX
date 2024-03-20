@@ -91,5 +91,8 @@
   },
   "atom.qmd": {
     "atom.html": "6f7d5642"
+  },
+  "blog/regression/index.qmd": {
+    "index.html": "36a33f73"
   }
 }

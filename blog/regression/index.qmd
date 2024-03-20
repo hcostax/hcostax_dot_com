@@ -1,0 +1,131 @@
+---
+title: "Trivia Series: Regression"
+author: "Henrique Costa"
+date: "2023-12-20"
+categories: [R, DataViz]
+description: "This series was created to deal with trivialities that need to be reinforced."
+image: "feature.png"
+title-block-banner: true
+---
+
+![](feature.png)
+
+# Rambling (proxy for an introduction)
+
+We are experiencing the chaos of the information age, and its technological advents with voracious evolution and expansion. And in the midst of all this we have the advent of Big Data that has reached the delights of many with Data Science, Machine Learning and Artificial Intelligence.
+
+As a result, the idea of mathematical and statistical “models” became the rage, gaining visibility. And among these models we have the most trivial of all: regression.
+
+Have you ever stopped to think about where this term comes from, and what it means in practice? Exactly what you thought: “That’s the basics!” That's why this series of stories was called “trivialities”, as they are trivialities that sometimes need to be known.
+
+On my journey as a Quant backpacker (which is not that long, but long enough to make these observations) I realized that very simple points or concepts are not known to the overwhelming majority, and that is why I observed a lot of misapplication or erroneous judgment in statistical metrics , and I decided to start writing about it.
+
+As I have academic roots, I brought the questions that will direct this text:
+
+- What is regression?
+- What does this term mean?
+- Where and when did it appear?
+- How to apply?
+- Am I applying it correctly?
+
+
+And as usual, I'll start from the beginning (😄😄😄).
+
+
+# The beginnings of the Regression
+
+When we think of this term, the idea of linear statistical regression immediately comes to mind. And yes, that's right, the term is the same, but why regression? When I think about the meaning of the word, and obviously I already looked it up in a dictionary on the internet, which is the same as going back, regression comes from regressing, returning to a state that has already been overcome or that has evolved but returned to its previous levels. previous ones. It's like climbing a ladder but going down backwards.
+
+And that's right (😄), regression is twisting, returning to the previous state. This term was coined in 1875 by an amateur mathematician named Francis Galton, who in some books says he was a first cousin of the famous Charles Darwin. Galton brought to the public the coining of this term, calling it “regression to the mean”.
+
+Why regression to the mean? Did something that moved end up returning to the mean? Yes that's right. The concept only makes sense when we connect it with classical statistics, or better, with the central limit theorem.
+
+This theorem is a right arm of probability theory, and builds the statement that when the sample size increases, the sampling distribution gets closer and closer to a normal distribution, and this is fundamental in statistical inference. Translating into simpler language: it's like saying that when we observe nature, we perceive a natural state or a standard, normal state of things.
+
+An example using Brazil, a country with a tropical climate, it is correct to say that the natural state of the climate is heat, as it is sunny many more days a year than cold or rainy, therefore, on average it is hotter, so the normal of Brazil is to have sunny days, but when it rains we can activate the idea of normality, in which the rain can soon stop and the sun and high temperatures return to the scene.
+
+Regression to the mean is exactly that, even if you have days with rain, the “normal” is that there are more sunny days, so rainy days are deviations between the averages, as the average is sunny days.
+But the term became known even after Galton published a study in 1885 in which he demonstrated, through regression calculations, that the height of children does not tend to reflect the height of their parents, but rather tends to regress towards the population average.
+
+It is possible to see how the term gained scale after use by Galton, using the Google tool: Ngram book viewer.
+
+![](./img/ngram_regression.jpg)
+
+
+
+# The use of regression
+
+The application of this method is known to many people, and can be found in different professional areas. But as I come from economic sciences, I will use this line to continue the text.
+
+The economic sciences have econometrics as their quantitative tool, which is the metric for analyzing economic theories. In simpler language, it is the use of classical statistical techniques to analyze and test an economic theory.
+Economists use a lot of regression in econometrics.
+
+And studying econometrics I learned a lot about the fundamentals of regression analysis. But a few paragraphs above I wrote that regression is returning to your previous state, so how would economists use a matrix like that? For the simple fact that the economy works with the assumption of a state of general equilibrium of things.
+
+The economist has a single objective, and amazingly, it is not to save money, it is to allocate scarce resources to meet unlimited needs. But how does he do this? Artificial intelligence!!! (😄😄😄).
+
+Joking apart. The economist uses optimization as his beacon. Allocating scarce resources to satisfy unlimited needs is only possible by optimizing. And what does optimizing have to do with regression? All! Economists' assumption of a general equilibrium is only possible using optimization, minimizing costs and maximizing profits, and regressing to the mean or returning to a normal state only reinforces or supports the idea of general equilibrium.
+
+So, I will bring a brief example of application, coming from a study material for economists, the book on basic econometrics by Damodar N. Gujarati and Dawn C. Porter, in which we find an application that is well known among economists: the hypothesis of marginal propensity to consume, or MPC.
+
+Keynes stated: **_The fundamental psychological law [...] is that men [women] are disposed, as a rule and on an average, to increase their consumption as their income increases, but not in the same proportion as the increase in income._** _(Keynes, John Maynard. The general theory of employment, interest and money. New York: Harcourt Brace Jovanovich, 1936. p. 96.)._
+
+In short, Keynes postulated that the population had a tendency to increase its consumption when its income increases, which was labeled marginal propensity to consume (PMC), and it would be analyzed quantitatively as a rate of variation in consumption, and that this variation would be given in units (say, one dollar) of income, and that it will always be greater than zero, but less than 1, as his observations showed that additional consumption did not have the same level as additional income, that is, people did not they consumed everything they earned and that is why it has to be less than 1.
+
+
+With the data in hand, it's time to go to RStudio and start "the work". *Let's Code!*
+
+
+``` {r}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+
+
+# install.packages("janitor")
+# remotes::install_github("brunoruas2/gujarati")
+
+# load libraries
+library(tidyverse)
+library(gujarati)
+# library(janitor)
+
+TableI_1 %>% 
+  mutate(
+    Year = str_replace_all(Year, " ", ""),
+    PCE.Y. = str_replace_all(PCE.Y., " ", ""),
+    GDP.X. = str_replace_all(GDP.X., " ", ""),
+  ) %>% 
+  as_tibble(.name_repair = janitor::make_clean_names) %>% 
+  mutate(
+    pce_y = as.numeric(pce_y),
+    gdp_x = as.numeric(gdp_x)
+  ) -> tbl_pmc
+
+
+
+model <- lm(pce_y ~ gdp_x, data = tbl_pmc)
+
+
+model %>% 
+  summary() %>% 
+  pander::pander()
+
+
+```
+
+
+
+
+
+
+
+Você também pode reproduzir isso escolhendo a cidade que quiser.
+
+Confira o código completo no meu [Github](https://github.com/hcostax/01---Desafio_EconomistaVisual).
+
+::: callout-note
+# Ei! 👋, você achou meu trabalho útil? Considere me comprar um café ☕, clicando aqui 👇🏻
+
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
+:::

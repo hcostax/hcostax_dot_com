@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Henrique Costa">
-<meta name="dcterms.date" content="2023-06-20">
-<meta name="description" content="That old and tiring war between R-lovers and pythonists">
+<meta name="dcterms.date" content="2023-12-20">
+<meta name="description" content="This series was created to deal with trivialities that need to be reinforced.">
 
-<title>For me, the choice was R or Python | Henrique Costa</title>
+<title>Trivia Series: Regression | Henrique Costa</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -86,17 +120,42 @@ cookieconsent.run({
 });
 </script> 
   
-<style>
 
-      .quarto-title-block .quarto-title-banner {
-        background: #FFFFFF;
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
       }
-</style>
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
-
-<meta name="twitter:title" content="For me, the choice was R or Python | Henrique Costa">
-<meta name="twitter:description" content="That old and tiring war between R-lovers and pythonists">
-<meta name="twitter:image" content="https://hcostax.com/blog/r_or_python/feature.jpeg">
+<meta name="twitter:title" content="Trivia Series: Regression | Henrique Costa">
+<meta name="twitter:description" content="This series was created to deal with trivialities that need to be reinforced.">
+<meta name="twitter:image" content="https://hcostax.com/blog/regression/feature.png">
+<meta name="twitter:image-height" content="573">
+<meta name="twitter:image-width" content="1119">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -145,16 +204,16 @@ cookieconsent.run({
 <!-- content -->
 <header id="title-block-header" class="quarto-title-block default page-columns">
 <div id="title-block-header-title" class="quarto-title page-columns page-full page-layout-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);">
-<h1 class="title">For me, the choice was R or Python</h1>
+<h1 class="title">Trivia Series: Regression</h1>
     <div class="quarto-categories">
         <div class="quarto-category">R</div>
-        <div class="quarto-category">Python</div>
+        <div class="quarto-category">DataViz</div>
       </div>
   </div>
 
 <div>
   <div id="title-block-title-desc" class="description pt-4">
-    That old and tiring war between R-lovers and pythonists
+    This series was created to deal with trivialities that need to be reinforced.
   </div>
 </div>
 
@@ -171,7 +230,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 20, 2023</p>
+      <p class="date">December 20, 2023</p>
     </div>
   </div>
   
@@ -185,7 +244,15 @@ cookieconsent.run({
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#rambling-proxy-for-an-introduction" id="toc-rambling-proxy-for-an-introduction" class="nav-link active" data-scroll-target="#rambling-proxy-for-an-introduction">Rambling (proxy for an introduction)</a></li>
+  <li><a href="#the-beginnings-of-the-regression" id="toc-the-beginnings-of-the-regression" class="nav-link" data-scroll-target="#the-beginnings-of-the-regression">The beginnings of the Regression</a></li>
+  <li><a href="#the-use-of-regression" id="toc-the-use-of-regression" class="nav-link" data-scroll-target="#the-use-of-regression">The use of regression</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -200,47 +267,161 @@ cookieconsent.run({
 
 
 
-<p><a href="feature.jpeg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="feature.jpeg" class="img-fluid"></a></p>
-<p>Having decided to improve my skills in the short space of time left between my professional life and personal life, I started researching the available data science options. It quickly became clear that I should choose a programming language to learn and apply the techniques and the choice fell on R or Python, for me both options are good because they are free and open source and have an excellent reputation, in addition to each one having its own own community of active users, and very active!</p>
-<p>I don’t remember where I saw this tip, but for me it was the central factor in my decision and something worth sharing:</p>
-<p>If you are a professional who uses analysis tools in a business context, and with experience in Microsoft Excel, my tip is: select R to start your journey in data science. R is a single-threaded object-oriented functional programming language, and once you understand the main commands, it is intuitive to use. As such, it’s pretty predictable, which has been great for me as a professional. R has an excellent graphics package that complements the idea of analyzing data or <em>data wrangling</em>, which Python programmers often turn to <em>ggplot2</em> to generate beautiful visualizations, or use the ggplot2 theme within Python (lol), even though in recent years the Python’s visualization libraries have improved a lot, yet this happens frequently.</p>
-<p>On the other hand, if you already have some experience in programming, or are from the computing field, Python is a much more general purpose and more readable language for those coming from this field, and everything you can do in Python is the same as most of the things R is good at.</p>
-<p>Both groups have strong communities that share their knowledge on various blogs and events and I really think they are both great choices. Today the market is more heated when it comes to Python, and professionals who know both languages do very well.</p>
-<p>Now that I’ve been using R for a few years (since 2013), I’ve had the chance to use it a few times in the workplace, and I use it whenever I can, showing the resources this tool offers, creating econometric models and estimation procedures. in modeling for financial risks to provide some business <em>insights</em>. I have already carried out many analysis projects for private clients and I feel honored that my efforts to learn are generating results.</p>
-<p>A fellow Python expert with an interest in machine learning once saw the few lines of code needed to organize the dataset, train a model, and predict results, and, frankly, he was shocked. We had an awkward R-to-Python conversation trying to understand the differences between data matrices and data frames afterwards, although for me it clarified where R was strong: the ease of preparing and building a model quickly for any type of analysis.</p>
-<p>But depending on who you ask, when I first came into contact with R in 2013, R probably had a slight, if not substantial, advantage over Python in user adoption for machine learning and what is now known as data science. Since then, the use of Python has grown substantially and it would be difficult to argue against the fact that Python is the new favorite, although the race may be tighter than one might expect given the enthusiasm of Python fans supporting the new and Brilliant tool with biggest hype.</p>
-<p>In recent years, Python has benefited greatly from the rapid maturation of free add-ons such as the <em>Scikit-learn</em> machine learning framework, the <em>Pandas</em> data structure library, the <em>Matplotlib</em> graphing library, and the <em>Jupyter</em> notebook interface, among several other open applications. Source libraries that make it easier than ever to do data science in Python. Of course, these libraries only brought Python to par with what R and RStudio could do long ago! However, Python is comparatively fast and memory efficient – at least relative to R – which may have contributed to the fact that Python is now arguably the language most frequently taught in formal programs in data science. and quickly gained adoption across business domains.</p>
-<p>Rather than indicating the imminent death of R, because Python’s rise is steep. In fact, the use of R is also growing rapidly, and R and RStudio are becoming more popular than ever. Although students sometimes ask whether it’s worth starting with R rather than jumping straight to Python, there are still many good reasons to choose to learn machine learning with R over the alternative.</p>
-<p>Please note that these justifications are quite subjective – not just mine, but any justification on the internet will be like this – and there is no right answer for everyone, so I hesitate to put this in writing! However, as someone who still uses R almost daily as part of my work for a large corporation, here are a few things I’ve noticed:</p>
+<p><a href="feature.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="feature.png" class="img-fluid"></a></p>
+<section id="rambling-proxy-for-an-introduction" class="level1">
+<h1>Rambling (proxy for an introduction)</h1>
+<p>We are experiencing the chaos of the information age, and its technological advents with voracious evolution and expansion. And in the midst of all this we have the advent of Big Data that has reached the delights of many with Data Science, Machine Learning and Artificial Intelligence.</p>
+<p>As a result, the idea of mathematical and statistical “models” became the rage, gaining visibility. And among these models we have the most trivial of all: regression.</p>
+<p>Have you ever stopped to think about where this term comes from, and what it means in practice? Exactly what you thought: “That’s the basics!” That’s why this series of stories was called “trivialities”, as they are trivialities that sometimes need to be known.</p>
+<p>On my journey as a Quant backpacker (which is not that long, but long enough to make these observations) I realized that very simple points or concepts are not known to the overwhelming majority, and that is why I observed a lot of misapplication or erroneous judgment in statistical metrics , and I decided to start writing about it.</p>
+<p>As I have academic roots, I brought the questions that will direct this text:</p>
 <ul>
-<li><p>As I mentioned above, R may be more intuitive and easier to learn for people with a background in social sciences or business (such as economics, marketing, and so on), while Python may make more sense for computer scientists and other types of engineers .</p></li>
-<li><p>R tends to be used more like a “calculator” where you type a command and something happens; In general, coding in Python tends to require more consideration of loops and other program flow commands (this distinction is disappearing over time with additional functionality in Python libraries).</p></li>
-<li><p>R uses relatively few types of data structures (those included are adapted for data analysis) and the frequently used spreadsheet-type data format is a built-in data type; Comparatively, Python has many specialized data structures and uses libraries like <em>NumPy</em> or <em>Pandas</em> , and for array data format, each has its own syntax.</p></li>
-<li><p>R and its packages can be easier to install and update than Python, in part because Python is managed by some operating systems by default, and maintaining separate dependencies and environments is a challenge (modern Python installation tools and managers of packages addressed this simultaneously, in some ways making the problem worse!).</p></li>
-<li><p>R is typically slower and more memory-intensive than Python for data manipulation and iteration over large data structures, but if the data fits in memory, this difference is somewhat insignificant. For real? If you don’t work with BigData, you probably don’t even feel this difference; R has improved in this area, R is making data preparation faster and easier, and for data that doesn’t fit in memory there are workarounds (R with BigData), but this is admittedly one of Python’s biggest advantages.</p></li>
-<li><p>R has the support and vision of the Posit team (formerly known as RStudio) driving innovation and making R easier and more enjoyable to use in a unified software environment (RStudio Desktop); In contrast, Python’s innovations are occurring on multiple fronts, offering more “right” ways to accomplish the same thing (for better or worse).</p></li>
+<li>What is regression?</li>
+<li>What does this term mean?</li>
+<li>Where and when did it appear?</li>
+<li>How to apply?</li>
+<li>Am I applying it correctly?</li>
 </ul>
-<p>Hopefully, the reasons above will give you the confidence to begin your journey. There is no shame in starting with R (as some people think), whether you stay with R long-term, use it side-by-side with other languages like Python, or major in something entirely different, the fundamental principles you learn will be transferred to any language (a clear example is: if you haven’t yet learned SQL and already understand the basics of <em>Tidyverse</em>, you will have an easier time studying SQL, or vice versa) or tools you choose. Although code written in R is much “prettier” to me, I highly recommend that you use the right tool for the job, whatever it may be. You may find, as I did, that R and RStudio are your tools of choice for many real-world data science and machine learning projects - even if you occasionally take advantage of Python’s unique strengths!</p>
-<p>In the end, my recommendation is: just pick one and get started. Although I will still need to learn a lot more about Python to get the unique benefits each language offers, amplified through collaboration. The good thing about this is that, using RStudio, an IDE for R, it is possible to use Python and SQL as well.</p>
+<p>And as usual, I’ll start from the beginning (😄😄😄).</p>
+</section>
+<section id="the-beginnings-of-the-regression" class="level1">
+<h1>The beginnings of the Regression</h1>
+<p>When we think of this term, the idea of linear statistical regression immediately comes to mind. And yes, that’s right, the term is the same, but why regression? When I think about the meaning of the word, and obviously I already looked it up in a dictionary on the internet, which is the same as going back, regression comes from regressing, returning to a state that has already been overcome or that has evolved but returned to its previous levels. previous ones. It’s like climbing a ladder but going down backwards.</p>
+<p>And that’s right (😄), regression is twisting, returning to the previous state. This term was coined in 1875 by an amateur mathematician named Francis Galton, who in some books says he was a first cousin of the famous Charles Darwin. Galton brought to the public the coining of this term, calling it “regression to the mean”.</p>
+<p>Why regression to the mean? Did something that moved end up returning to the mean? Yes that’s right. The concept only makes sense when we connect it with classical statistics, or better, with the central limit theorem.</p>
+<p>This theorem is a right arm of probability theory, and builds the statement that when the sample size increases, the sampling distribution gets closer and closer to a normal distribution, and this is fundamental in statistical inference. Translating into simpler language: it’s like saying that when we observe nature, we perceive a natural state or a standard, normal state of things.</p>
+<p>An example using Brazil, a country with a tropical climate, it is correct to say that the natural state of the climate is heat, as it is sunny many more days a year than cold or rainy, therefore, on average it is hotter, so the normal of Brazil is to have sunny days, but when it rains we can activate the idea of normality, in which the rain can soon stop and the sun and high temperatures return to the scene.</p>
+<p>Regression to the mean is exactly that, even if you have days with rain, the “normal” is that there are more sunny days, so rainy days are deviations between the averages, as the average is sunny days. But the term became known even after Galton published a study in 1885 in which he demonstrated, through regression calculations, that the height of children does not tend to reflect the height of their parents, but rather tends to regress towards the population average.</p>
+<p>It is possible to see how the term gained scale after use by Galton, using the Google tool: Ngram book viewer.</p>
+<p><a href="./img/ngram_regression.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="./img/ngram_regression.jpg" class="img-fluid"></a></p>
+</section>
+<section id="the-use-of-regression" class="level1">
+<h1>The use of regression</h1>
+<p>The application of this method is known to many people, and can be found in different professional areas. But as I come from economic sciences, I will use this line to continue the text.</p>
+<p>The economic sciences have econometrics as their quantitative tool, which is the metric for analyzing economic theories. In simpler language, it is the use of classical statistical techniques to analyze and test an economic theory. Economists use a lot of regression in econometrics.</p>
+<p>And studying econometrics I learned a lot about the fundamentals of regression analysis. But a few paragraphs above I wrote that regression is returning to your previous state, so how would economists use a matrix like that? For the simple fact that the economy works with the assumption of a state of general equilibrium of things.</p>
+<p>The economist has a single objective, and amazingly, it is not to save money, it is to allocate scarce resources to meet unlimited needs. But how does he do this? Artificial intelligence!!! (😄😄😄).</p>
+<p>Joking apart. The economist uses optimization as his beacon. Allocating scarce resources to satisfy unlimited needs is only possible by optimizing. And what does optimizing have to do with regression? All! Economists’ assumption of a general equilibrium is only possible using optimization, minimizing costs and maximizing profits, and regressing to the mean or returning to a normal state only reinforces or supports the idea of general equilibrium.</p>
+<p>So, I will bring a brief example of application, coming from a study material for economists, the book on basic econometrics by Damodar N. Gujarati and Dawn C. Porter, in which we find an application that is well known among economists: the hypothesis of marginal propensity to consume, or MPC.</p>
+<p>Keynes stated: <strong><em>The fundamental psychological law […] is that men [women] are disposed, as a rule and on an average, to increase their consumption as their income increases, but not in the same proportion as the increase in income.</em></strong> <em>(Keynes, John Maynard. The general theory of employment, interest and money. New York: Harcourt Brace Jovanovich, 1936. p.&nbsp;96.).</em></p>
+<p>In short, Keynes postulated that the population had a tendency to increase its consumption when its income increases, which was labeled marginal propensity to consume (PMC), and it would be analyzed quantitatively as a rate of variation in consumption, and that this variation would be given in units (say, one dollar) of income, and that it will always be greater than zero, but less than 1, as his observations showed that additional consumption did not have the same level as additional income, that is, people did not they consumed everything they earned and that is why it has to be less than 1.</p>
+<p>With the data in hand, it’s time to go to RStudio and start “the work”. <em>Let’s Code!</em></p>
+<div class="cell">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("janitor")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># remotes::install_github("brunoruas2/gujarati")</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># load libraries</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gujarati)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># library(janitor)</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>TableI_1 <span class="sc">%&gt;%</span> </span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">Year =</span> <span class="fu">str_replace_all</span>(Year, <span class="st">" "</span>, <span class="st">""</span>),</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">PCE.Y. =</span> <span class="fu">str_replace_all</span>(PCE.Y., <span class="st">" "</span>, <span class="st">""</span>),</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">GDP.X. =</span> <span class="fu">str_replace_all</span>(GDP.X., <span class="st">" "</span>, <span class="st">""</span>),</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as_tibble</span>(<span class="at">.name_repair =</span> janitor<span class="sc">::</span>make_clean_names) <span class="sc">%&gt;%</span> </span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">pce_y =</span> <span class="fu">as.numeric</span>(pce_y),</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">gdp_x =</span> <span class="fu">as.numeric</span>(gdp_x)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  ) <span class="ot">-&gt;</span> tbl_pmc</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(pce_y <span class="sc">~</span> gdp_x, <span class="at">data =</span> tbl_pmc)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>model <span class="sc">%&gt;%</span> </span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summary</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  pander<span class="sc">::</span><span class="fu">pander</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 15%">
+<col style="width: 18%">
+<col style="width: 13%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">&nbsp;</th>
+<th style="text-align: center;">Estimate</th>
+<th style="text-align: center;">Std. Error</th>
+<th style="text-align: center;">t value</th>
+<th style="text-align: center;">Pr(&gt;|t|)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>(Intercept)</strong></td>
+<td style="text-align: center;">-299.6</td>
+<td style="text-align: center;">28.76</td>
+<td style="text-align: center;">-10.42</td>
+<td style="text-align: center;">1.877e-13</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>gdp_x</strong></td>
+<td style="text-align: center;">0.7218</td>
+<td style="text-align: center;">0.004423</td>
+<td style="text-align: center;">163.2</td>
+<td style="text-align: center;">7.244e-63</td>
+</tr>
+</tbody>
+</table>
+<table class="table table-sm table-striped small">
+<caption>Fitting linear model: pce_y ~ gdp_x</caption>
+<colgroup>
+<col style="width: 20%">
+<col style="width: 30%">
+<col style="width: 12%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Observations</th>
+<th style="text-align: center;">Residual Std. Error</th>
+<th style="text-align: center;"><span class="math inline">\(R^2\)</span></th>
+<th style="text-align: center;">Adjusted <span class="math inline">\(R^2\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">73.57</td>
+<td style="text-align: center;">0.9984</td>
+<td style="text-align: center;">0.9983</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>Você também pode reproduzir isso escolhendo a cidade que quiser.</p>
+<p>Confira o código completo no meu <a href="https://github.com/hcostax/01---Desafio_EconomistaVisual">Github</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+Ei! 👋, você achou meu trabalho útil? Considere me comprar um café ☕, clicando aqui 👇🏻
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"></a></p>
+<p><a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"></a></p>
 </div>
 </div>
 
 
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-costa2023" class="csl-entry quarto-appendix-citeas" role="listitem">
-Costa, Henrique. 2023. <span>“For Me, the Choice Was R or
-Python.”</span> June 20, 2023. <a href="https://hcostax.com/blog/r_or_python">https://hcostax.com/blog/r_or_python</a>.
+Costa, Henrique. 2023. <span>“Trivia Series: Regression.”</span>
+December 20, 2023. <a href="https://hcostax.com/blog/regression">https://hcostax.com/blog/regression</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -656,7 +837,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"openEffect":"zoom","selector":".lightbox","descPosition":"bottom"});
+<script>var lightboxQuarto = GLightbox({"selector":".lightbox","descPosition":"bottom","loop":false,"closeEffect":"zoom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
