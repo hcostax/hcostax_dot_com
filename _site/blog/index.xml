@@ -10,265 +10,7 @@
 <atom:link href="https://hcostax.com/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>This is my blog where I share fun facts, thoughts, and the stupid things I&#39;ve done in hopes that you won&#39;t have to go down the same regrettable path. &lt;/br&gt;</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Wed, 20 Dec 2023 03:00:00 GMT</lastBuildDate>
-<item>
-  <title>Trivia Series: Regression</title>
-  <dc:creator>Henrique Costa</dc:creator>
-  <link>https://hcostax.com/blog/regression/</link>
-  <description><![CDATA[ 
-
-<!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
-<!-- 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title"> 
--->
-<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
-<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
-
-
-
-<p><a href="feature.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://hcostax.com/blog/regression/feature.png" class="img-fluid"></a></p>
-<section id="rambling-proxy-for-an-introduction" class="level1">
-<h1>Rambling (proxy for an introduction)</h1>
-<p>We are experiencing the chaos of the information age, and its technological advents with voracious evolution and expansion. And in the midst of all this we have the advent of Big Data that has reached the delights of many with Data Science, Machine Learning and Artificial Intelligence.</p>
-<p>As a result, the idea of mathematical and statistical “models” became the rage, gaining visibility. And among these models we have the most trivial of all: regression.</p>
-<p>Have you ever stopped to think about where this term comes from, and what it means in practice? Exactly what you thought: “That’s the basics!” That’s why this series of stories was called “trivialities”, as they are trivialities that sometimes need to be known.</p>
-<p>On my journey as a Quant backpacker (which is not that long, but long enough to make these observations) I realized that very simple points or concepts are not known to the overwhelming majority, and that is why I observed a lot of misapplication or erroneous judgment in statistical metrics , and I decided to start writing about it.</p>
-<p>As I have academic roots, I brought the questions that will direct this text:</p>
-<ul>
-<li>What is regression?</li>
-<li>What does this term mean?</li>
-<li>Where and when did it appear?</li>
-<li>How to apply?</li>
-<li>Am I applying it correctly?</li>
-</ul>
-<p>And as usual, I’ll start from the beginning (😄😄😄).</p>
-</section>
-<section id="the-beginnings-of-the-regression" class="level1">
-<h1>The beginnings of the Regression</h1>
-<p>When we think of this term, the idea of linear statistical regression immediately comes to mind. And yes, that’s right, the term is the same, but why regression? When I think about the meaning of the word, and obviously I already looked it up in a dictionary on the internet, which is the same as going back, regression comes from regressing, returning to a state that has already been overcome or that has evolved but returned to its previous levels. previous ones. It’s like climbing a ladder but going down backwards.</p>
-<p>And that’s right (😄), regression is twisting, returning to the previous state. This term was coined in 1875 by an amateur mathematician named Francis Galton, who in some books says he was a first cousin of the famous Charles Darwin. Galton brought to the public the coining of this term, calling it “regression to the mean”.</p>
-<p>Why regression to the mean? Did something that moved end up returning to the mean? Yes that’s right. The concept only makes sense when we connect it with classical statistics, or better, with the central limit theorem.</p>
-<p>This theorem is a right arm of probability theory, and builds the statement that when the sample size increases, the sampling distribution gets closer and closer to a normal distribution, and this is fundamental in statistical inference. Translating into simpler language: it’s like saying that when we observe nature, we perceive a natural state or a standard, normal state of things.</p>
-<p>An example using Brazil, a country with a tropical climate, it is correct to say that the natural state of the climate is heat, as it is sunny many more days a year than cold or rainy, therefore, on average it is hotter, so the normal of Brazil is to have sunny days, but when it rains we can activate the idea of normality, in which the rain can soon stop and the sun and high temperatures return to the scene.</p>
-<p>Regression to the mean is exactly that, even if you have days with rain, the “normal” is that there are more sunny days, so rainy days are deviations between the averages, as the average is sunny days. But the term became known even after Galton published a study in 1885 in which he demonstrated, through regression calculations, that the height of children does not tend to reflect the height of their parents, but rather tends to regress towards the population average.</p>
-<p>It is possible to see how the term gained scale after use by Galton, using the Google tool: Ngram book viewer.</p>
-<p><a href="./img/ngram_regression.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="https://hcostax.com/blog/regression/img/ngram_regression.jpg" class="img-fluid"></a></p>
-</section>
-<section id="the-use-of-regression" class="level1">
-<h1>The use of regression</h1>
-<p>The application of this method is known to many people, and can be found in different professional areas. But as I come from economic sciences, I will use this line to continue the text.</p>
-<p>The economic sciences have econometrics as their quantitative tool, which is the metric for analyzing economic theories. In simpler language, it is the use of classical statistical techniques to analyze and test an economic theory. Economists use a lot of regression in econometrics.</p>
-<p>And studying econometrics I learned a lot about the fundamentals of regression analysis. But a few paragraphs above I wrote that regression is returning to your previous state, so how would economists use a matrix like that? For the simple fact that the economy works with the assumption of a state of general equilibrium of things.</p>
-<p>The economist has a single objective, and amazingly, it is not to save money, it is to allocate scarce resources to meet unlimited needs. But how does he do this? Artificial intelligence!!! (😄😄😄).</p>
-<p>Joking apart. The economist uses optimization as his beacon. Allocating scarce resources to satisfy unlimited needs is only possible by optimizing. And what does optimizing have to do with regression? All! Economists’ assumption of a general equilibrium is only possible using optimization, minimizing costs and maximizing profits, and regressing to the mean or returning to a normal state only reinforces or supports the idea of general equilibrium.</p>
-<p>So, I will bring a brief example of application, coming from a study material for economists, the book on basic econometrics by Damodar N. Gujarati and Dawn C. Porter, in which we find an application that is well known among economists: the hypothesis of marginal propensity to consume, or MPC.</p>
-<p>Keynes stated: <strong><em>The fundamental psychological law […] is that men [women] are disposed, as a rule and on an average, to increase their consumption as their income increases, but not in the same proportion as the increase in income.</em></strong> <em>(Keynes, John Maynard. The general theory of employment, interest and money. New York: Harcourt Brace Jovanovich, 1936. p.&nbsp;96.).</em></p>
-<p>In short, Keynes postulated that the population had a tendency to increase its consumption when its income increases, which was labeled marginal propensity to consume (PMC), and it would be analyzed quantitatively as a rate of variation in consumption, and that this variation would be given in units (say, one dollar) of income, and that it will always be greater than zero, but less than 1, as his observations showed that additional consumption did not have the same level as additional income, that is, people did not they consumed everything they earned and that is why it has to be less than 1.</p>
-<p>With the data in hand, it’s time to go to RStudio and start “the work”. <em>Let’s Code!</em></p>
-<div class="cell">
-<details class="code-fold">
-<summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># install.packages("janitor")</span></span>
-<span id="cb1-2"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># remotes::install_github("brunoruas2/gujarati")</span></span>
-<span id="cb1-3"></span>
-<span id="cb1-4"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># load libraries</span></span>
-<span id="cb1-5"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span>
-<span id="cb1-6"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(gujarati)</span>
-<span id="cb1-7"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># library(janitor)</span></span>
-<span id="cb1-8"></span>
-<span id="cb1-9">TableI_1 <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb1-10">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(</span>
-<span id="cb1-11">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">Year =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(Year, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">" "</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">""</span>),</span>
-<span id="cb1-12">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">PCE.Y. =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(PCE.Y., <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">" "</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">""</span>),</span>
-<span id="cb1-13">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">GDP.X. =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">str_replace_all</span>(GDP.X., <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">" "</span>, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">""</span>),</span>
-<span id="cb1-14">  ) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb1-15">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as_tibble</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">.name_repair =</span> janitor<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span>make_clean_names) <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb1-16">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">mutate</span>(</span>
-<span id="cb1-17">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">pce_y =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as.numeric</span>(pce_y),</span>
-<span id="cb1-18">    <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">gdp_x =</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">as.numeric</span>(gdp_x)</span>
-<span id="cb1-19">  ) <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">-&gt;</span> tbl_pmc</span>
-<span id="cb1-20"></span>
-<span id="cb1-21"></span>
-<span id="cb1-22"></span>
-<span id="cb1-23">model <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">lm</span>(pce_y <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">~</span> gdp_x, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">data =</span> tbl_pmc)</span>
-<span id="cb1-24"></span>
-<span id="cb1-25"></span>
-<span id="cb1-26">model <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb1-27">  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">summary</span>() <span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">%&gt;%</span> </span>
-<span id="cb1-28">  pander<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">pander</span>()</span></code></pre></div>
-</details>
-<div class="cell-output-display">
-<table class="table table-sm table-striped small">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 15%">
-<col style="width: 18%">
-<col style="width: 13%">
-<col style="width: 16%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">&nbsp;</th>
-<th style="text-align: center;">Estimate</th>
-<th style="text-align: center;">Std. Error</th>
-<th style="text-align: center;">t value</th>
-<th style="text-align: center;">Pr(&gt;|t|)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;"><strong>(Intercept)</strong></td>
-<td style="text-align: center;">-299.6</td>
-<td style="text-align: center;">28.76</td>
-<td style="text-align: center;">-10.42</td>
-<td style="text-align: center;">1.877e-13</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;"><strong>gdp_x</strong></td>
-<td style="text-align: center;">0.7218</td>
-<td style="text-align: center;">0.004423</td>
-<td style="text-align: center;">163.2</td>
-<td style="text-align: center;">7.244e-63</td>
-</tr>
-</tbody>
-</table>
-<table class="table table-sm table-striped small">
-<caption>Fitting linear model: pce_y ~ gdp_x</caption>
-<colgroup>
-<col style="width: 20%">
-<col style="width: 30%">
-<col style="width: 12%">
-<col style="width: 23%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Observations</th>
-<th style="text-align: center;">Residual Std. Error</th>
-<th style="text-align: center;"><img src="https://latex.codecogs.com/png.latex?R%5E2"></th>
-<th style="text-align: center;">Adjusted <img src="https://latex.codecogs.com/png.latex?R%5E2"></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">46</td>
-<td style="text-align: center;">73.57</td>
-<td style="text-align: center;">0.9984</td>
-<td style="text-align: center;">0.9983</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p>Você também pode reproduzir isso escolhendo a cidade que quiser.</p>
-<p>Confira o código completo no meu <a href="https://github.com/hcostax/01---Desafio_EconomistaVisual">Github</a>.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Ei! 👋, você achou meu trabalho útil? Considere me comprar um café ☕, clicando aqui 👇🏻
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"></a></p>
-</div>
-</div>
-
-
-</section>
-
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-costa2023" class="csl-entry quarto-appendix-citeas">
-Costa, Henrique. 2023. <span>“Trivia Series: Regression.”</span>
-December 20, 2023. <a href="https://hcostax.com/blog/regression">https://hcostax.com/blog/regression</a>.
-</div></div></section></div> ]]></description>
-  <category>R</category>
-  <category>DataViz</category>
-  <guid>https://hcostax.com/blog/regression/</guid>
-  <pubDate>Wed, 20 Dec 2023 03:00:00 GMT</pubDate>
-  <media:content url="https://hcostax.com/blog/regression/feature.png" medium="image" type="image/png" height="74" width="144"/>
-</item>
+<lastBuildDate>Sun, 27 Aug 2023 03:00:00 GMT</lastBuildDate>
 <item>
   <title>A few words about risk management</title>
   <dc:creator>Henrique Costa</dc:creator>
@@ -2047,7 +1789,7 @@ Costa, Henrique. 2021. <span>“Reproduzindo Gráfico Do Economista Visual
 <h3 class="anchored" data-anchor-id="economist-already-knows-machine-learning">Economist already knows machine learning!</h3>
 <p>Before you think about stopping reading, thinking that this article is already “travelling” or that the writer must have gone to a very strange economics college to learn about machine learning, but be careful:</p>
 <p>Machine learning is really just a fancy word for statistical and predictive modeling that programmers invented to make their business look better, get more attention, and even keep non-participants out of their club. Maybe they should know something about economics, after all — scarcity raises prices! (laughter).</p>
-<p></p><div id="tweet-25335"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1173923414614188032","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EAgora eu me sinto um Machine Learning Engineer, com meu framework em econometria. \uD83E\uDD2D\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1173923414614188032?ref_src=twsrc%5Etfw\"\u003ESeptember 17, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-25335").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-76623"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1173923414614188032","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EAgora eu me sinto um Machine Learning Engineer, com meu framework em econometria. \uD83E\uDD2D\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1173923414614188032?ref_src=twsrc%5Etfw\"\u003ESeptember 17, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-76623").innerHTML = tweet["html"];</script><p></p>
 <p>A well-observed fact is that the first two modules of a machine learning course (I’m commenting on the most popular one on the Coursera website) are linear regression and logistic regression. (sarcastic laughter)</p>
 <p>Well, 99.99% of economists who took an introductory econometrics course, this may surprise you, but these economists probably have a deeper knowledge of linear regression than a junior or full-time data scientist.</p>
 <p>Just as it can be scary to come across names like “neural networks” or <em>“support vector machines — SVM”</em>, the economist would possibly have to work very hard, even break a sweat to find the term “heteroscedasticity” anywhere in machine learning programs.</p>
@@ -2067,7 +1809,7 @@ Costa, Henrique. 2021. <span>“Reproduzindo Gráfico Do Economista Visual
 <p>Not to mention that most models are sensitive to their own basic assumptions. A serious talk would not end without someone mentioning another possible source of bias, attenuation bias, survival bias, selection bias, measurement error, reverse causality, truncation, censoring, omission, spurious correlation, etc.</p>
 <p>For each problem, there was another model — even more complicated — to deal with it. A model that could also introduce its own baggage of assumptions and problems. The world of econometrics became confusing and more nebulous as the disciplines advanced, in addition to creating the impression of being uncertain and frustratingly limiting. Then Artificial Intelligence, <em>Machine Learning</em> and Data Science emerged to illuminate this dark path.</p>
 <p><em><strong>Warning:</strong> gross exaggeration ahead.</em></p>
-<p></p><div id="tweet-37714"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1169567629188763649","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EUm dos momentos mais singulares da minha vida foi quando descobri que inteligência artificial é tudo modelo de otimização.\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1169567629188763649?ref_src=twsrc%5Etfw\"\u003ESeptember 5, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-37714").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-52866"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1169567629188763649","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EUm dos momentos mais singulares da minha vida foi quando descobri que inteligência artificial é tudo modelo de otimização.\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1169567629188763649?ref_src=twsrc%5Etfw\"\u003ESeptember 5, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-52866").innerHTML = tweet["html"];</script><p></p>
 <p>Compared to all this, machine learning is wonderfully, charmingly simpler. Instead of solving models explicitly — based on strict assumptions — they are estimated iteratively with the gradient method (and its derivatives). Rather than testing or validating the theory behind the event you are trying to study, and carefully selecting explanatory variables and the appropriate model, you can try everything you can think of and see if the answer holds up.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -2151,7 +1893,7 @@ Scientists?”</span> October 29, 2018. <a href="https://hcostax.com/blog/econom
 
 <p><a href="feature.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://hcostax.com/blog/maths_economics/feature.jpg" class="img-fluid"></a></p>
 <p>In today’s post, I want to start a discussion about the use of mathematics and statistics in economics, and with this shocking sentence:</p>
-<p></p><div id="tweet-69916"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1167043313846935552","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EMathematical economics is a redundant expression.\u003Ca href=\"https:\/\/twitter.com\/hashtag\/economics?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#economics\u003C\/a\u003E \u003Ca href=\"https:\/\/twitter.com\/hashtag\/Economia?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#Economia\u003C\/a\u003E\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1167043313846935552?ref_src=twsrc%5Etfw\"\u003EAugust 29, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-69916").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-20599"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1167043313846935552","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EMathematical economics is a redundant expression.\u003Ca href=\"https:\/\/twitter.com\/hashtag\/economics?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#economics\u003C\/a\u003E \u003Ca href=\"https:\/\/twitter.com\/hashtag\/Economia?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#Economia\u003C\/a\u003E\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1167043313846935552?ref_src=twsrc%5Etfw\"\u003EAugust 29, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-20599").innerHTML = tweet["html"];</script><p></p>
 <p>When a person studies economics for the first time, it is likely that they will not encounter “crazy” equations that go beyond basic mathematics. There is a lot of content to learn the various conceptual definitions such as price, supply, demand, costs, profit, etc., in addition to the various market structures.</p>
 <p>As you delve deeper into the subject, you realize there is more to it than just simplistic theories and newspaper chatter. So, what would be the best way to explain the concepts of price, quantity of product sold and production cost without referring to a single example without using mathematics?</p>
 <p>This <em>paper</em>:</p>
@@ -2162,11 +1904,11 @@ Scientists?”</span> October 29, 2018. <a href="https://hcostax.com/blog/econom
 <p>Although economics is technically recognized as a social science, students who embark on a “nebulous” adventure (undergraduate course) in this field receive (or should receive) a solid foundation in mathematics. Because determining how scarce resources can be reallocated requires a minimum understanding of mathematics, to calculate what the distribution cost will be and evaluate (quantitatively) among other measures. Thus, the field of economics is full of mathematical equations and applications.</p>
 <p>What is learned in teaching economics are mainly linear algebra, calculus and statistics. These are the basis for achieving the infamous econometrics. In algebra it is taught about total cost and total revenue. In calculus the objective is to find the derivatives of indifference and utility curves, profit maximization curves, cost minimization and growth models.</p>
 <p>In statistics, economists learn about predictive models and how to determine how likely a certain event is to occur. Econometrics, for some peculiar reasons, is called <em>“economentira”</em> for the use of models in which the final objective is to estimate and predict a certain variable.</p>
-<p></p><div id="tweet-78649"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1179532980265586688","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EProfessor de Econometria: \u003Cbr\u003Ey = a + ß.X ... + u\u003Cbr\u003E\u003Cbr\u003Eeu:\u003Cbr\u003E\u003Cbr\u003E━━━━━┒ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃＼○／ - não entendi \u003Cbr\u003E┓┏┓┏┓┃   \/        vo me mata\u003Cbr\u003E┛┗┛┗┛┃ノ) \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┃┃┃┃┃┃\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1179532980265586688?ref_src=twsrc%5Etfw\"\u003EOctober 2, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-78649").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-17186"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1179532980265586688","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EProfessor de Econometria: \u003Cbr\u003Ey = a + ß.X ... + u\u003Cbr\u003E\u003Cbr\u003Eeu:\u003Cbr\u003E\u003Cbr\u003E━━━━━┒ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃＼○／ - não entendi \u003Cbr\u003E┓┏┓┏┓┃   \/        vo me mata\u003Cbr\u003E┛┗┛┗┛┃ノ) \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┃┃┃┃┃┃\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1179532980265586688?ref_src=twsrc%5Etfw\"\u003EOctober 2, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-17186").innerHTML = tweet["html"];</script><p></p>
 <p>As you progress through related topics, you will find examples such as market demand curves (sum of several individual demand curves) or changes in the supply and price of a <em>commodity</em> or calculating the price elasticity of a commodity. consumption, each concept is validated using mathematics. Definitely, a mathematical and statistical approach is needed to have clarity when we arrive at the long-awaited “solution” to the problems proposed to professionals in this area.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="./img/econometria.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="A typical review for the basic econometrics final exam"><img src="https://hcostax.com/blog/maths_economics/img/econometria.jpg" class="img-fluid figure-img" alt="A typical review for the basic econometrics final exam"></a></p>
+<p><a href="./img/econometria.jpg" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="quarto-lightbox-gallery-2" title="A typical review for the basic econometrics final exam"><img src="https://hcostax.com/blog/maths_economics/img/econometria.jpg" class="img-fluid figure-img" alt="A typical review for the basic econometrics final exam"></a></p>
 <figcaption>A typical review for the basic econometrics final exam</figcaption>
 </figure>
 </div>
