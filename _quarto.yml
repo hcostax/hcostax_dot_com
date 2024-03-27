@@ -3,8 +3,12 @@ project:
   resources:
     - CNAME
 #     
-# bibliography: assets/files/bib/references.bib
-# csl: assets/files/bib/chicago-author-date.csl
+bibliography: assets/bib/references.bib
+csl: assets/bib/chicago-author-date.csl
+
+# Metadata stuff
+pagetitle: "{{< meta title >}} | Henrique Costa"
+author-meta: "Henrique Costa"
 
 website:
   cookie-consent:

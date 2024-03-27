@@ -1,6 +1,6 @@
 ---
 title: "Blog Posts"
-description: This is my blog where I share fun facts, thoughts, and the stupid things I've done in hopes that you won't have to go down the same regrettable path. </br>
+description: I'm a backpacker sharing my journey into quantitative financial risks in the hopes that you don't have to suffer on your journey too. </br>
 listing: 
   contents: 
     - "**/index.qmd"
