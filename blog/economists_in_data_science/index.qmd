@@ -5,6 +5,7 @@ date: "2018-10-29"
 categories: [Economics, Theory, Data Science, Econometrics]
 description: "Economics and Data Science"
 image: "feature.jpg"
+doi: 10.59350/ggmnk-ke432
 ---
 
 ![](feature.jpg)

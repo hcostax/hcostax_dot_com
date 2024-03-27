@@ -5,6 +5,7 @@ date: "2018-09-21"
 categories: [Economics, Theory, Mathematics]
 description: "Discussing the strong presence of mathematics in economics"
 image: "feature.jpg"
+doi: 10.59350/tvp77-8gp37
 ---
 
 ![](feature.jpg)

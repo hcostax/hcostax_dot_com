@@ -6,6 +6,7 @@ categories: [R, DataViz]
 description: "Desafio de reproduzir uma visualização, utilizando meus conhecimentos em R"
 image: "feature.png"
 title-block-banner: true
+doi: 10.59350/y7tgs-0v282
 ---
 
 ![](feature.png)

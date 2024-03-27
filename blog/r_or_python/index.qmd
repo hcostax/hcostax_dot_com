@@ -5,6 +5,7 @@ date: "2023-06-20"
 categories: [R, Python]
 description: "That old and tiring war between R-lovers and pythonists"
 image: "feature.jpeg"
+doi: 10.59350/83vew-1de35
 ---
 
 ![](feature.jpeg)
