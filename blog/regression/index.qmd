@@ -6,6 +6,7 @@ categories: [R, DataViz]
 description: "This series was created to deal with trivialities that need to be reinforced."
 image: "feature.png"
 title-block-banner: true
+doi: 10.59350/xs70x-mar87
 ---
 
 ![](feature.png)
