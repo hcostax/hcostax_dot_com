@@ -82,28 +82,30 @@ So, returning to the example of Keynes's hypothesis, he uses ceteris paribus in 
 
 In short, Keynes postulated that the population had a tendency to increase its consumption when its income increases, which was labeled marginal propensity to consume (PMC), and it would be analyzed quantitatively as a rate of variation in consumption, and that this variation would be given in units (say, one dollar) of income, and that it will always be greater than zero, but less than 1, as his observations showed that additional consumption did not have the same level as additional income, that is, people did not they consumed everything they earned and that is why it has to be less than 1.
 
-## Specifying the hypothesis-based econometric model
+# Specifying the hypothesis-based econometric model
 Although Keynes established an apparently positive relationship between income and consumption, he did not stipulate how this relationship happens. To simplify, let's use “poetic license” and suggest the following functional form for the relationship between income and consumption established by Keynes:
 
-$$ Y = \beta_1 + \beta_2X \;\;\;\;\;\;\;\; 0 < \beta_2 < 1 $$
+$$ Y = \alpha + \beta X \;\;\;\;\;\;\;\; 0 < \beta < 1 $$
 
-where $Y$ represents consumption expenditure and $X$ represents income, and $\beta_1$ and $\beta_2$ are the model parameters. These parameters represent the effects generated through the relationship between $X$ and $Y$. Sometimes known as marginal effects.
+where $Y$ represents consumption expenditure and $X$ represents income, and $\alpha$ and $\beta$ are the model parameters. These parameters represent the effects generated through the relationship between $X$ and $Y$. Sometimes known as marginal effects.
 
-The parameter $\beta_1$ is known as “intecept”, or average value. Generally it demonstrates that where the relationship between the variables between $X$ and $Y$ begins. It is the average value, if the marginal effect is null (zero). It's like saying that, if $X$ has no influence on $Y$, then when $X$ and $Y$ are related, it is $\beta_1$ that shows the level of this relationship.
+The parameter $\alpha$ is known as “intecept”, or average value. Generally it demonstrates that where the relationship between the variables between $X$ and $Y$ begins. It is the average value, if the marginal effect is null (zero). It's like saying that, if $X$ has no influence on $Y$, then when $X$ and $Y$ are related, it is $\alpha$ that shows the level of this relationship.
 
-The parameter $\beta_2$ is known as “angle” or “angular coefficient”, also called the slope of a straight line, it determines the slope of a straight line. A straight line because the relationship between $X$ and $Y$ is direct (linear). The angular coefficient is a number that is related to the angle formed between the straight line and the horizontal, describing the slope of the straight line. And when we connect the terms “slope” and “angle”, we can remember the concept of derivation, and that is exactly it, it is the effect of the derivation in relation to $X$. And we know that in economics the concept of marginality is directly correlated to the concept of derivation, which is why the angular coefficient is known as marginal effect.
+The parameter $\beta$ is known as “angle” or “angular coefficient”, also called the slope of a straight line, it determines the slope of a straight line. A straight line because the relationship between $X$ and $Y$ is direct (linear). The angular coefficient is a number that is related to the angle formed between the straight line and the horizontal, describing the slope of the straight line. And when we connect the terms “slope” and “angle”, we can remember the concept of derivation, and that is exactly it, it is the effect of the derivation in relation to $X$. And we know that in economics the concept of marginality is directly correlated to the concept of derivation, which is why the angular coefficient is known as marginal effect.
 
-And the angular coefficient ($\beta_2$) will be our indicator of the relationship between income and consumption, which we will call Marginal Propensity to Consume. This is already constructed by Keynes' theory, but we are here trying to work on an idea.
+And the angular coefficient ($\beta$) will be our indicator of the relationship between income and consumption, which we will call Marginal Propensity to Consume. This is already constructed by Keynes' theory, but we are here trying to work on an idea.
 
 As I mentioned in the paragraphs above, this relationship does not represent a pure and exact reality. Of course, there are many variables that can affect consumption in addition to income, and therefore the model needs an additional specification, which for me is the charm of the linear regression model.To take into account the influences of other variables that were not imposed in this model:
 
-$$ Y = \beta_1 + \beta_2X + u $$
+$$ Y = \alpha + \beta X + u $$
 
 where $u$ is known as the disturbance, or error term of the model. It is a random (stochastic) variable that has probabilistic properties. The error term $u$ is intended to represent all other factors that affect consumption but are not explicitly imposed here.
 
 The error term is essentially the ceteris paribus condition. It contains all the other effects that interact with Consumption, but they are being nullified, or kept constant/unchanged, that is, there is no variation, so no effect can be felt. 
 
 That is, by isolating the effect of income on consumption, we artificially create a kind of general equilibrium, showing that the relationship between $X$ and $Y$ is balanced (normal), and that other factors have no influence.
+
+# Estimating the model
 
 With data from Table I.1 of the Gujarati basic econometrics book, which refers to the United States economy in the period 1960-2005. Table I.1 uses aggregate consumption to represent model consumption, and GDP to represent income, and thus we will estimate the marginal propensity to consume. With the data in hand, it's time to go to RStudio and start "the work". *Let's Code!*
 
@@ -147,17 +149,113 @@ model %>%
 ```
 
 
+Now that we have an output from the experimental model, we can obtain numerical estimates of the parameters that will provide us with an empirical resolution for the consumption function proposed here in this example.
+
+Now that we have an output from the experimental model, we can obtain numerical estimates of the parameters that will provide us with an empirical resolution for the consumption function proposed here in this example.
+
+We can note that the statistical technique of regression analysis is the main tool for obtaining such estimates. After running the model, we obtain the following estimates:
+
+  - $\hat{\alpha}$ = -299.6
+  - $\hat{\beta}$ = 0.7218
+
+Now we can empirically translate the estimated consumption function as:
+
+$$ \hat{Y_t} = \hat{\alpha} + \hat{\beta} X_t $$
+
+$$ \hat{Y_t} = -299,5913 + 0,7218 X_t $$
+
+
+The caret above the Y and the parameters $\alpha$ and $\beta$ indicates that this is an estimate. The following graph shows this estimated consumption function (i.e., the regression line).
+
+
+
+
+``` {r}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+
+# load libraries
+library(tidyverse)
+
+
+
+# building a plot with ggplot2 based on grammar of graphics:
+
+tbl_pmc %>% 
+ggplot(aes(
+  x = gdp_x, 
+  y = pce_y
+  )) +
+  geom_point(aes(
+    color = "red", 
+    size = .7, 
+    alpha = .8
+    )) +
+  geom_smooth(
+    method = "lm", 
+    se = TRUE,  
+    inherit.aes = TRUE
+    ) +
+  theme(legend.position = "none") +
+  labs(
+    title = "Econometric model of the Keynesian consumption function",
+    subtitle = "Values for 1960-2005 in billions of 2000 dollars",
+    x = "Gross Domestic Product",
+    y = "Personal Consumption Expenditures",
+    caption = "Source: Economics Report of the President, 2007, Table B-2, p, 230.")
+
+
+```
+
+
+The red dots represent our income data (GDP), and the blue line represents the regression line.
+
+As we can see in the model graph, it is possible to say that the regression line (blue) fits the data well, this means that the points (red) on the graph that represent the data are very close to the regression line.
+
+The table of model results and the graph show us that, in this analyzed period (1960-2005), a marginal effect of income (GDP) on consumption behavior of almost 0.72 is estimated.
+
+As I already mentioned, this marginal effect estimate comes from the angular coefficient, which we will now call "Coefficient of the Marginal Propensity to Consume", and this coefficient is telling us that, in the sampled period, whenever there is an increase of one dollar in income In real terms, on average, there is an additional increase of around 72 cents in real consumption expenditure, that is: for every 1 dollar more, there is, on average, a marginal effect of 72 cents. If it increases by 1 dollar, consumption increases by 72 cents, and the opposite is also true.
+
+::: {.callout-caution collapse="F"}
+## Average Marginal Effects
+
+Attention to a critical point: we use the term "average" or we always use the phrase "on average" because the relationship between consumption and income is inexact, that is, it is not a direct causal relationship; and this is very clear in the model graph, as not all red points in the data are exactly on the regression line.
+
+In general terms, we can say that, "[...]according to our data, average consumer spending increases by about 70 cents for every dollar increase in income.
+
+And this reinforces the idea of normality and average. We use the average as the optimal moment, because under normal conditions of temperature and pressure the effect is recognized in the average, because no matter the changes or oscillations, if we believe in the normality that after these variations everything returns to normal, then the average is the central point, that is, the normal.
+
+As I tried to explain before, what we call marginal effects are partial derivatives of the regression equation in relation to each variable in the model; So therefore, the average marginal effects are simply the average of these partial derivatives. In ordinary least squares regression, the estimated slope coefficients (angular and/or $\hat \beta$) are marginal effects.
+:::
+
+
+Now we know that on the surface, Keynes' assumption appears to make sense. We found this positive relationship between income and consumption. However, we still cannot simply accept this value as a confirmation of the Keynesian consumption hypothesis, as it is not enough to just find the effect, it is necessary to test it, and that is science. And following the scientific standard, let's create a problem question: "Is this estimate sufficiently below unity?" This is to convince us that it is not a result due to chance or a peculiar insight that the data we use is showing.
+
+
+# Testing a hypothesis
+
+Based on the idea of a scientific test, in which the statistical framework is used as a tool, is the marginal effect of 0.72 statistically smaller than 1? If this is true, it will be support for the birth of a theory. This practice of testing, or better said, corroborating or refuting existing economic theories or those that are emerging, based on sample evidence, which is basically what we have just done, has a foundation based on statistical theory, in a field of study known as statistical inference (hypothesis testing).
 
 
 
 
 
-Você também pode reproduzir isso escolhendo a cidade que quiser.
 
-Confira o código completo no meu [Github](https://github.com/hcostax/01---Desafio_EconomistaVisual).
+
+
+
+
+
+
+
+
+You can also reproduce this by choosing the city you want.
+
+Check out the complete code on my [Github](https://github.com/hcostax/01---Desafio_EconomistaVisual).
 
 ::: callout-note
-# Ei! 👋, você achou meu trabalho útil? Considere me comprar um café ☕, clicando aqui 👇🏻
+# Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
 
-<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug=hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
+<a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"/></a>
 :::
