@@ -512,6 +512,31 @@ Average Marginal Effects
 <section id="testing-a-hypothesis" class="level1">
 <h1>Testing a hypothesis</h1>
 <p>Based on the idea of a scientific test, in which the statistical framework is used as a tool, is the marginal effect of 0.72 statistically smaller than 1? If this is true, it will be support for the birth of a theory. This practice of testing, or better said, corroborating or refuting existing economic theories or those that are emerging, based on sample evidence, which is basically what we have just done, has a foundation based on statistical theory, in a field of study known as statistical inference (hypothesis testing).</p>
+<p>Let’s consider that the adjusted model we have just put together is a reasonably good approximation of reality, and that is one of the objectives of a model, but we need to be critical and criticize our own model, trying to understand if the estimates obtained are in accordance with the expectations of the theory being tested, which in this case is Keynes’ theory of marginal propensity to consume.</p>
+<p>Economist Milton Friedman said that a theory or hypothesis that is not verifiable with empirical evidence may not be admissible as part of scientific research. Whereas Keynes expected the marginal propensity to consume to be positive but less than 1. In our model, we estimate a marginal propensity of about 0.72. But before this figure can be accepted as a confirmation of Keynesian consumption theory, we need to statistically test this estimate to convince ourselves that it is not a result due to chance or a peculiarity of the data we use.</p>
+<p>Para isso, iremos utilizar do conceito de teste de hipotese. Nesse teste teremos que lidar com dois tipos de erros possíveis de ocorrer:</p>
+<ul>
+<li><p>A hipótese nula é rejeitada embora seja verdadeira (erro tipo I)</p></li>
+<li><p>A hipótese nula não é rejeitada embora seja falsa (erro tipo II)</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip with Title
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The significance level of the test is the probability to commit a type-I-error we are willing to accept in advance. E.g., using a prespecified significance level of 0.05, we reject the null hypothesis if and only if the p-value is less than 0.05. The significance level is chosen before the test is conducted.</p>
+<p>An equivalent procedure is to reject the null hypothesis if the observed test statistic is, in absolute value terms, larger than the critical value of the test statistic. The critical value is determined by the significance level chosen and defines two disjoint sets of values which are called acceptance region and rejection region. The acceptance region contains all values of the test statistic for which the test does not reject while the rejection region contains all the values for which the test does reject.</p>
+<p>The p-value is the probability that, in repeated sampling under the same conditions a test statistic is observed that provides just as much evidence against the null hypothesis as the test statistic actually observed.</p>
+<p>The actual probability that the test rejects the true null hypothesis is called the size of the test. In an ideal setting, the size does equal the significance level.</p>
+<p>The probability that the test correctly rejects a false null hypothesis is called power.</p>
+<p><a href="https://www.econometrics-with-r.org/3.3-hypothesis-tests-concerning-the-population-mean.html">Hanck, Christoph, Martin Arnold, Alexander Gerber, and Martin Schmelzer. Introduction to Econometrics with R. Universität Duisburg-Essen, 2021.</a></p>
+</div>
+</div>
 <p>You can also reproduce this by choosing the city you want.</p>
 <p>Check out the complete code on my <a href="https://github.com/hcostax/01---Desafio_EconomistaVisual">Github</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -949,7 +974,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","loop":false,"selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","closeEffect":"zoom","loop":false,"selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -10,7 +10,64 @@
 <atom:link href="https://hcostax.com/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>I&#39;m a backpacker sharing my journey into quantitative financial risks in the hopes that you don&#39;t have to suffer on your journey too. &lt;/br&gt;</description>
 <generator>quarto-1.4.550</generator>
-<lastBuildDate>Wed, 20 Dec 2023 03:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 16 Apr 2024 03:00:00 GMT</lastBuildDate>
+<item>
+  <title>Sorte e Apostas</title>
+  <dc:creator>Henrique Costa</dc:creator>
+  <link>https://hcostax.com/blog/sorte_apostas/</link>
+  <description><![CDATA[ 
+
+<!-- source: https://github.com/gadenbuie/garrickadenbuie-com/blob/main/_partials/title-block-link-buttons/title-block.html -->
+<!-- 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title"> 
+-->
+<!-- <header id="title-block-header" class="quarto-title-block default page-columns"> -->
+<!-- <div class="quarto-title page-columns page-full featured-image p-4" style="background-image: url(featured.png), url(featured.jpg), url(../featured.jpg);"> -->
+
+
+
+<p><a href="feature.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://hcostax.com/blog/sorte_apostas/feature.png" class="img-fluid"></a></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p>Aqui voce pode encontrar a apresentação: <a href="https://hcostax.quarto.pub/sorte_apostas/">Link da Apresentação</a></p>
+<p><br></p>
+<p>Aqui você se cadastra para participar do sorteio dos livros: <a href="https://forms.gle/mCN6j8CTEWY66PX27">Link para o Formulário</a></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p>You can also reproduce this by choosing the city you want.</p>
+<p>Check out the complete code on my <a href="https://github.com/hcostax/01---Desafio_EconomistaVisual">Github</a>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Hey! 👋, did you find my work useful? Consider buying me a coffee ☕, by clicking here 👇🏻
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><a href="https://www.buymeacoffee.com/hcostax"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&amp;emoji=&amp;slug =hcostax&amp;button_colour=5F7FFF&amp;font_colour=ffffff&amp;font_family=Cookie&amp;outline_colour=000000&amp;coffee_colour=FFDD00"></a></p>
+</div>
+</div>
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-costa2024" class="csl-entry quarto-appendix-citeas">
+Costa, Henrique. 2024. <span>“Sorte e Apostas.”</span> April 16, 2024.
+<a href="https://hcostax.com/blog/sorte_apostas">https://hcostax.com/blog/sorte_apostas</a>.
+</div></div></section></div> ]]></description>
+  <category>Tomada de Decisão</category>
+  <category>Riscos</category>
+  <guid>https://hcostax.com/blog/sorte_apostas/</guid>
+  <pubDate>Tue, 16 Apr 2024 03:00:00 GMT</pubDate>
+  <media:content url="https://hcostax.com/blog/sorte_apostas/feature.png" medium="image" type="image/png" height="81" width="144"/>
+</item>
 <item>
   <title>Trivia Series: Regression</title>
   <dc:creator>Henrique Costa</dc:creator>
@@ -423,6 +480,31 @@ Average Marginal Effects
 <section id="testing-a-hypothesis" class="level1">
 <h1>Testing a hypothesis</h1>
 <p>Based on the idea of a scientific test, in which the statistical framework is used as a tool, is the marginal effect of 0.72 statistically smaller than 1? If this is true, it will be support for the birth of a theory. This practice of testing, or better said, corroborating or refuting existing economic theories or those that are emerging, based on sample evidence, which is basically what we have just done, has a foundation based on statistical theory, in a field of study known as statistical inference (hypothesis testing).</p>
+<p>Let’s consider that the adjusted model we have just put together is a reasonably good approximation of reality, and that is one of the objectives of a model, but we need to be critical and criticize our own model, trying to understand if the estimates obtained are in accordance with the expectations of the theory being tested, which in this case is Keynes’ theory of marginal propensity to consume.</p>
+<p>Economist Milton Friedman said that a theory or hypothesis that is not verifiable with empirical evidence may not be admissible as part of scientific research. Whereas Keynes expected the marginal propensity to consume to be positive but less than 1. In our model, we estimate a marginal propensity of about 0.72. But before this figure can be accepted as a confirmation of Keynesian consumption theory, we need to statistically test this estimate to convince ourselves that it is not a result due to chance or a peculiarity of the data we use.</p>
+<p>Para isso, iremos utilizar do conceito de teste de hipotese. Nesse teste teremos que lidar com dois tipos de erros possíveis de ocorrer:</p>
+<ul>
+<li><p>A hipótese nula é rejeitada embora seja verdadeira (erro tipo I)</p></li>
+<li><p>A hipótese nula não é rejeitada embora seja falsa (erro tipo II)</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip with Title
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The significance level of the test is the probability to commit a type-I-error we are willing to accept in advance. E.g., using a prespecified significance level of 0.05, we reject the null hypothesis if and only if the p-value is less than 0.05. The significance level is chosen before the test is conducted.</p>
+<p>An equivalent procedure is to reject the null hypothesis if the observed test statistic is, in absolute value terms, larger than the critical value of the test statistic. The critical value is determined by the significance level chosen and defines two disjoint sets of values which are called acceptance region and rejection region. The acceptance region contains all values of the test statistic for which the test does not reject while the rejection region contains all the values for which the test does reject.</p>
+<p>The p-value is the probability that, in repeated sampling under the same conditions a test statistic is observed that provides just as much evidence against the null hypothesis as the test statistic actually observed.</p>
+<p>The actual probability that the test rejects the true null hypothesis is called the size of the test. In an ideal setting, the size does equal the significance level.</p>
+<p>The probability that the test correctly rejects a false null hypothesis is called power.</p>
+<p><a href="https://www.econometrics-with-r.org/3.3-hypothesis-tests-concerning-the-population-mean.html">Hanck, Christoph, Martin Arnold, Alexander Gerber, and Martin Schmelzer. Introduction to Econometrics with R. Universität Duisburg-Essen, 2021.</a></p>
+</div>
+</div>
 <p>You can also reproduce this by choosing the city you want.</p>
 <p>Check out the complete code on my <a href="https://github.com/hcostax/01---Desafio_EconomistaVisual">Github</a>.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -2230,7 +2312,7 @@ Costa, Henrique. 2021. <span>“Reproduzindo Gráfico Do Economista Visual
 <h3 class="anchored" data-anchor-id="economist-already-knows-machine-learning">Economist already knows machine learning!</h3>
 <p>Before you think about stopping reading, thinking that this article is already “travelling” or that the writer must have gone to a very strange economics college to learn about machine learning, but be careful:</p>
 <p>Machine learning is really just a fancy word for statistical and predictive modeling that programmers invented to make their business look better, get more attention, and even keep non-participants out of their club. Maybe they should know something about economics, after all — scarcity raises prices! (laughter).</p>
-<p></p><div id="tweet-95562"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1173923414614188032","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EAgora eu me sinto um Machine Learning Engineer, com meu framework em econometria. \uD83E\uDD2D\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1173923414614188032?ref_src=twsrc%5Etfw\"\u003ESeptember 17, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-95562").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-90231"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1173923414614188032","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EAgora eu me sinto um Machine Learning Engineer, com meu framework em econometria. \uD83E\uDD2D\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1173923414614188032?ref_src=twsrc%5Etfw\"\u003ESeptember 17, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-90231").innerHTML = tweet["html"];</script><p></p>
 <p>A well-observed fact is that the first two modules of a machine learning course (I’m commenting on the most popular one on the Coursera website) are linear regression and logistic regression. (sarcastic laughter)</p>
 <p>Well, 99.99% of economists who took an introductory econometrics course, this may surprise you, but these economists probably have a deeper knowledge of linear regression than a junior or full-time data scientist.</p>
 <p>Just as it can be scary to come across names like “neural networks” or <em>“support vector machines — SVM”</em>, the economist would possibly have to work very hard, even break a sweat to find the term “heteroscedasticity” anywhere in machine learning programs.</p>
@@ -2250,7 +2332,7 @@ Costa, Henrique. 2021. <span>“Reproduzindo Gráfico Do Economista Visual
 <p>Not to mention that most models are sensitive to their own basic assumptions. A serious talk would not end without someone mentioning another possible source of bias, attenuation bias, survival bias, selection bias, measurement error, reverse causality, truncation, censoring, omission, spurious correlation, etc.</p>
 <p>For each problem, there was another model — even more complicated — to deal with it. A model that could also introduce its own baggage of assumptions and problems. The world of econometrics became confusing and more nebulous as the disciplines advanced, in addition to creating the impression of being uncertain and frustratingly limiting. Then Artificial Intelligence, <em>Machine Learning</em> and Data Science emerged to illuminate this dark path.</p>
 <p><em><strong>Warning:</strong> gross exaggeration ahead.</em></p>
-<p></p><div id="tweet-81837"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1169567629188763649","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EUm dos momentos mais singulares da minha vida foi quando descobri que inteligência artificial é tudo modelo de otimização.\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1169567629188763649?ref_src=twsrc%5Etfw\"\u003ESeptember 5, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-81837").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-17144"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1169567629188763649","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EUm dos momentos mais singulares da minha vida foi quando descobri que inteligência artificial é tudo modelo de otimização.\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1169567629188763649?ref_src=twsrc%5Etfw\"\u003ESeptember 5, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-17144").innerHTML = tweet["html"];</script><p></p>
 <p>Compared to all this, machine learning is wonderfully, charmingly simpler. Instead of solving models explicitly — based on strict assumptions — they are estimated iteratively with the gradient method (and its derivatives). Rather than testing or validating the theory behind the event you are trying to study, and carefully selecting explanatory variables and the appropriate model, you can try everything you can think of and see if the answer holds up.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -2334,7 +2416,7 @@ Scientists?”</span> October 29, 2018. <a href="https://doi.org/10.59350/ggmnk-
 
 <p><a href="feature.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="https://hcostax.com/blog/maths_economics/feature.jpg" class="img-fluid"></a></p>
 <p>In today’s post, I want to start a discussion about the use of mathematics and statistics in economics, and with this shocking sentence:</p>
-<p></p><div id="tweet-85333"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1167043313846935552","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EMathematical economics is a redundant expression.\u003Ca href=\"https:\/\/twitter.com\/hashtag\/economics?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#economics\u003C\/a\u003E \u003Ca href=\"https:\/\/twitter.com\/hashtag\/Economia?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#Economia\u003C\/a\u003E\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1167043313846935552?ref_src=twsrc%5Etfw\"\u003EAugust 29, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-85333").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-54289"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1167043313846935552","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"en\" dir=\"ltr\"\u003EMathematical economics is a redundant expression.\u003Ca href=\"https:\/\/twitter.com\/hashtag\/economics?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#economics\u003C\/a\u003E \u003Ca href=\"https:\/\/twitter.com\/hashtag\/Economia?src=hash&amp;ref_src=twsrc%5Etfw\"\u003E#Economia\u003C\/a\u003E\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1167043313846935552?ref_src=twsrc%5Etfw\"\u003EAugust 29, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-54289").innerHTML = tweet["html"];</script><p></p>
 <p>When a person studies economics for the first time, it is likely that they will not encounter “crazy” equations that go beyond basic mathematics. There is a lot of content to learn the various conceptual definitions such as price, supply, demand, costs, profit, etc., in addition to the various market structures.</p>
 <p>As you delve deeper into the subject, you realize there is more to it than just simplistic theories and newspaper chatter. So, what would be the best way to explain the concepts of price, quantity of product sold and production cost without referring to a single example without using mathematics?</p>
 <p>This <em>paper</em>:</p>
@@ -2345,7 +2427,7 @@ Scientists?”</span> October 29, 2018. <a href="https://doi.org/10.59350/ggmnk-
 <p>Although economics is technically recognized as a social science, students who embark on a “nebulous” adventure (undergraduate course) in this field receive (or should receive) a solid foundation in mathematics. Because determining how scarce resources can be reallocated requires a minimum understanding of mathematics, to calculate what the distribution cost will be and evaluate (quantitatively) among other measures. Thus, the field of economics is full of mathematical equations and applications.</p>
 <p>What is learned in teaching economics are mainly linear algebra, calculus and statistics. These are the basis for achieving the infamous econometrics. In algebra it is taught about total cost and total revenue. In calculus the objective is to find the derivatives of indifference and utility curves, profit maximization curves, cost minimization and growth models.</p>
 <p>In statistics, economists learn about predictive models and how to determine how likely a certain event is to occur. Econometrics, for some peculiar reasons, is called <em>“economentira”</em> for the use of models in which the final objective is to estimate and predict a certain variable.</p>
-<p></p><div id="tweet-51739"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1179532980265586688","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EProfessor de Econometria: \u003Cbr\u003Ey = a + ß.X ... + u\u003Cbr\u003E\u003Cbr\u003Eeu:\u003Cbr\u003E\u003Cbr\u003E━━━━━┒ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃＼○／ - não entendi \u003Cbr\u003E┓┏┓┏┓┃   \/        vo me mata\u003Cbr\u003E┛┗┛┗┛┃ノ) \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┃┃┃┃┃┃\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1179532980265586688?ref_src=twsrc%5Etfw\"\u003EOctober 2, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-51739").innerHTML = tweet["html"];</script><p></p>
+<p></p><div id="tweet-37810"></div><script>tweet={"url":"https:\/\/twitter.com\/hcostax\/status\/1179532980265586688","author_name":"Henrique Costa","author_url":"https:\/\/twitter.com\/hcostax","html":"\u003Cblockquote class=\"twitter-tweet\" align=\"center\"\u003E\u003Cp lang=\"pt\" dir=\"ltr\"\u003EProfessor de Econometria: \u003Cbr\u003Ey = a + ß.X ... + u\u003Cbr\u003E\u003Cbr\u003Eeu:\u003Cbr\u003E\u003Cbr\u003E━━━━━┒ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃＼○／ - não entendi \u003Cbr\u003E┓┏┓┏┓┃   \/        vo me mata\u003Cbr\u003E┛┗┛┗┛┃ノ) \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┛┗┛┗┛┃ \u003Cbr\u003E┓┏┓┏┓┃ \u003Cbr\u003E┃┃┃┃┃┃\u003C\/p\u003E&mdash; Henrique Costa (@hcostax) \u003Ca href=\"https:\/\/twitter.com\/hcostax\/status\/1179532980265586688?ref_src=twsrc%5Etfw\"\u003EOctober 2, 2019\u003C\/a\u003E\u003C\/blockquote\u003E\n\u003Cscript async src=\"https:\/\/platform.twitter.com\/widgets.js\" charset=\"utf-8\"\u003E\u003C\/script\u003E\n\n","width":550,"height":null,"type":"rich","cache_age":"3153600000","provider_name":"Twitter","provider_url":"https:\/\/twitter.com","version":"1.0"};document.getElementById("tweet-37810").innerHTML = tweet["html"];</script><p></p>
 <p>As you progress through related topics, you will find examples such as market demand curves (sum of several individual demand curves) or changes in the supply and price of a <em>commodity</em> or calculating the price elasticity of a commodity. consumption, each concept is validated using mathematics. Definitely, a mathematical and statistical approach is needed to have clarity when we arrive at the long-awaited “solution” to the problems proposed to professionals in this area.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">

@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/blog/index.html",
+    "listing": "/atom.html",
     "items": [
+      "/blog/sorte_apostas/index.html",
       "/blog/regression/index.html",
       "/blog/risk_intro/index.html",
       "/blog/r_or_python/index.html",
@@ -12,8 +13,9 @@
     ]
   },
   {
-    "listing": "/atom.html",
+    "listing": "/blog/index.html",
     "items": [
+      "/blog/sorte_apostas/index.html",
       "/blog/regression/index.html",
       "/blog/risk_intro/index.html",
       "/blog/r_or_python/index.html",
