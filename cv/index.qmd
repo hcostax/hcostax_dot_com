@@ -36,7 +36,7 @@ Providing:
 - IFRS (9 & 17) modeling
 - Enterprise Risk
 
-### Teacher advisor
+### Academic Advisor 
 
 ***MBA in Data Science & Analytics - USP/Esalq, São Paulo, SP - Brazil*** [Sept 2021 --- April 2023]{.cvdate}
 

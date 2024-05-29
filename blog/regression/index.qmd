@@ -243,11 +243,11 @@ Let's consider that the adjusted model we have just put together is a reasonably
 Economist Milton Friedman said that a theory or hypothesis that is not verifiable with empirical evidence may not be admissible as part of scientific research. Whereas Keynes expected the marginal propensity to consume to be positive but less than 1. In our model, we estimate a marginal propensity of about 0.72. But before this figure can be accepted as a confirmation of Keynesian consumption theory, we need to statistically test this estimate to convince ourselves that it is not a result due to chance or a peculiarity of the data we use.
 
 
-Para isso, iremos utilizar do conceito de teste de hipotese. Nesse teste teremos que lidar com dois tipos de erros possíveis de ocorrer:
+To do this, we will use the concept of hypothesis testing. In this test we will have to deal with two types of possible errors:
 
- - A hipótese nula é rejeitada embora seja verdadeira (erro tipo I)
+  - The null hypothesis is rejected even though it is true (type I error)
 
- - A hipótese nula não é rejeitada embora seja falsa (erro tipo II)
+  - The null hypothesis is not rejected even though it is false (type II error)
  
  
 ::: {.callout-tip}

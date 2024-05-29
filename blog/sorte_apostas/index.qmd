@@ -6,7 +6,7 @@ categories: [Tomada de Decisão, Riscos]
 description: "Apresentação feita para o projeto de Seminários do Programa de Pós-Graduação em Economia da Universidade Federal de Mato Grosso."
 image: "feature.png"
 title-block-banner: true
-# doi: 10.59350/xs70x-mar87
+doi: 10.59350/s9btn-bfx74
 ---
 
 ![](feature.png)
@@ -26,7 +26,7 @@ Aqui voce pode encontrar a apresentação: [Link da Apresentação](https://hcos
 <br>
 
 
-Aqui você se cadastra para participar do sorteio dos livros: [Link para o Formulário](https://forms.gle/mCN6j8CTEWY66PX27)
+<!-- Aqui você se cadastra para participar do sorteio dos livros: [Link para o Formulário](https://forms.gle/mCN6j8CTEWY66PX27) -->
 
 <br>
 
