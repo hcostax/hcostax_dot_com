@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.550">
+<meta name="generator" content="quarto-1.4.555">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -173,9 +173,23 @@ cookieconsent.run({
 </section>
 <section id="selected-work-experience" class="level2">
 <h2 class="anchored" data-anchor-id="selected-work-experience">Selected Work Experience <i class="fa-solid fa-briefcase" aria-label="briefcase"></i></h2>
+<section id="senior-credit-and-market-risk-analyst" class="level3">
+<h3 class="anchored" data-anchor-id="senior-credit-and-market-risk-analyst">Senior Credit and Market Risk Analyst</h3>
+<p><strong><em>Credsystem, São Paulo, SP - Brazil</em></strong> <span class="cvdate">Jun 2024 — Present</span></p>
+<p>Providing:</p>
+<ul>
+<li>Integrated Risks</li>
+<li>Regulatory Risk - Prudential</li>
+<li>Stress Test Program</li>
+<li>Credit Risk modeling (Expected Losses models)</li>
+<li>IFRS (9 &amp; 17) modeling</li>
+<li>CMN/BCB 4.966-21 &amp; BCB 352-24</li>
+<li>Enterprise Risk</li>
+</ul>
+</section>
 <section id="strategy-credit-risk-and-profitability" class="level3">
 <h3 class="anchored" data-anchor-id="strategy-credit-risk-and-profitability">Strategy, Credit Risk and Profitability</h3>
-<p><strong><em>QuintoAndar, São Paulo, SP - Brazil</em></strong> <span class="cvdate">Oct 2022 — Present</span></p>
+<p><strong><em>QuintoAndar, São Paulo, SP - Brazil</em></strong> <span class="cvdate">Oct 2022 — Jun 2024</span></p>
 <p>Providing:</p>
 <ul>
 <li>Profitability modeling (NPV)</li>
@@ -360,6 +374,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/hcostax\.com");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -394,7 +426,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

@@ -25,9 +25,25 @@ comments: false
 
 ## Selected Work Experience  {{< fa briefcase >}}
 
+
+### Senior Credit and Market Risk Analyst
+
+***Credsystem, São Paulo, SP - Brazil*** [Jun 2024 --- Present]{.cvdate}
+
+Providing: 
+
+- Integrated Risks
+- Regulatory Risk - Prudential
+- Stress Test Program
+- Credit Risk modeling (Expected Losses models)
+- IFRS (9 & 17) modeling
+- CMN/BCB 4.966-21 & BCB 352-24
+- Enterprise Risk
+
+
 ### Strategy, Credit Risk and Profitability
 
-***QuintoAndar, São Paulo, SP - Brazil*** [Oct 2022 --- Present]{.cvdate}
+***QuintoAndar, São Paulo, SP - Brazil*** [Oct 2022 --- Jun 2024]{.cvdate}
 
 Providing: 
 
