@@ -6,7 +6,7 @@ categories: [Maths, Stats, Model]
 description: "This series was created to deal with trivialities that need to be reinforced."
 image: "feature.jpg"
 title-block-banner: true
-doi: 10.59350/xs70x-mar87
+doi: 10.59350/rzbj1-p3865
 ---
 
 ![](feature.jpg)
