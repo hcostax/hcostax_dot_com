@@ -2,6 +2,7 @@
   {
     "listing": "/atom.html",
     "items": [
+      "/blog/modelling_foundations/index.html",
       "/blog/sorte_apostas/index.html",
       "/blog/regression/index.html",
       "/blog/risk_intro/index.html",
@@ -15,6 +16,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/modelling_foundations/index.html",
       "/blog/sorte_apostas/index.html",
       "/blog/regression/index.html",
       "/blog/risk_intro/index.html",

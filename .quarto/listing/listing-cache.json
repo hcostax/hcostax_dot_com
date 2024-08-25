@@ -1,13 +1,13 @@
 {
   "listingMap": {
-    "atom.qmd": [
-      "blog/**/index.qmd",
-      "!blog/index.qmd"
-    ],
-    "blog\\index.qmd": [
+    "blog/index.qmd": [
       "**/index.qmd",
       "**/index.markdown",
       "**/index.md"
+    ],
+    "atom.qmd": [
+      "blog/**/index.qmd",
+      "!blog/index.qmd"
     ]
   }
 }
