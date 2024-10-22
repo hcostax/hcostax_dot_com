@@ -1,71 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hcostax.com/atom.html</loc>
-    <lastmod>2024-08-25T16:44:55.380Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hcostax.com/license.html</loc>
-    <lastmod>2024-08-25T16:44:55.436Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hcostax.com/blog/sorte_apostas/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.435Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hcostax.com/blog/regression/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.418Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hcostax.com/blog/desafio_EconViz_01/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.401Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hcostax.com/blog/risk_intro/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.428Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hcostax.com/blog/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.403Z</lastmod>
+    <loc>https://hcostax.com/projects/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.247Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.436Z</lastmod>
+    <lastmod>2024-06-13T13:18:11.244Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/contact.html</loc>
-    <lastmod>2024-08-25T16:44:55.435Z</lastmod>
+    <lastmod>2024-06-13T13:18:11.242Z</lastmod>
   </url>
   <url>
-    <loc>https://hcostax.com/projects/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.436Z</lastmod>
+    <loc>https://hcostax.com/blog/sorte_apostas/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.241Z</lastmod>
   </url>
   <url>
-    <loc>https://hcostax.com/blog/maths_economics/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.406Z</lastmod>
+    <loc>https://hcostax.com/blog/risk_intro/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.219Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/blog/modelling_foundations/index.html</loc>
-    <lastmod>2024-08-25T20:50:19.554Z</lastmod>
+    <lastmod>2024-10-12T13:09:28.992Z</lastmod>
   </url>
   <url>
-    <loc>https://hcostax.com/blog/r_or_python/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.410Z</lastmod>
-  </url>
-  <url>
-    <loc>https://hcostax.com/blog/ceteris_paribus/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.398Z</lastmod>
+    <loc>https://hcostax.com/blog/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.191Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/blog/economists_in_data_science/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.403Z</lastmod>
+    <lastmod>2024-06-13T13:18:11.189Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hcostax.com/blog/ceteris_paribus/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.171Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hcostax.com/atom.html</loc>
+    <lastmod>2024-06-13T13:18:11.125Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hcostax.com/blog/desafio_EconViz_01/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.181Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hcostax.com/blog/financial_cycle_credit_01/index.html</loc>
+    <lastmod>2024-10-22T01:19:51.474Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hcostax.com/blog/maths_economics/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.200Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hcostax.com/blog/regression/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.214Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hcostax.com/blog/r_or_python/index.html</loc>
+    <lastmod>2024-06-13T13:18:11.203Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/consultancy/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.435Z</lastmod>
+    <lastmod>2024-06-13T13:18:11.242Z</lastmod>
   </url>
   <url>
     <loc>https://hcostax.com/cv/index.html</loc>
-    <lastmod>2024-08-25T16:44:55.436Z</lastmod>
+    <lastmod>2024-10-12T13:20:54.781Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hcostax.com/license.html</loc>
+    <lastmod>2024-06-13T13:18:11.245Z</lastmod>
   </url>
 </urlset>

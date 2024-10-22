@@ -33,11 +33,15 @@ comments: false
 Providing: 
 
 - Integrated Risks
+- Policies and Model Validation
 - Regulatory Risk - Prudential
 - Stress Test Program
 - Credit Risk modeling (Expected Losses models)
 - IFRS (9 & 17) modeling
-- CMN/BCB 4.966-21 & BCB 352-24
+- CMN/BCB 4.966-21 & BCB 352-23
+- Market Risk
+  - $\Delta$ *NII* and $\Delta$ *EVE*
+  - Risk monitoring of market exposures (Value at Risk, VaR Stressed, CVaR-ES);
 - Enterprise Risk
 
 
