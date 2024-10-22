@@ -6,7 +6,7 @@ categories: [Risk, Credit, Cycle, DataViz]
 description: "This is the first part of a series of articles that will address financial cycles in Brazil. Economic literature suggests that Credit Granting can be used as a proxy for the Financial Cycle, which tends to present a boom before the onset of a recession."
 image: "feature.svg"
 title-block-banner: true
-# doi: 10.59350/xs70x-mar87
+doi: 10.59350/tne4j-4je60
 ---
 
 ![](feature.svg)
