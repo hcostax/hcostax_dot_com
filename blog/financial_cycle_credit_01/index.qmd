@@ -14,7 +14,24 @@ doi: 10.59350/tne4j-4je60
 <br>
 
 
-In this article I want to update and improve an analysis I did some time ago, and published on LinkedIn, which can be accessed through this link: [Credit Granting can be used as a proxy for the Financial Cycle, which tends to present a "boom" before the beginning of a recession.](https://www.linkedin.com/feed/update/urn:li:activity:6874875270143209472/)
+After a really cool chat over coffee with my friend Catarina and some discussions on the topic of cycles and time series with my friends [Emanuella](https://www.linkedin.com/in/emanuella-c-duarte-64839717b/) and [Patrícia](https://www.linkedin.com/in/patr%C3%ADcia-melo-46a928b0/), I thought about writing an article here for this blog and resurrecting it, updating and improving an analysis I did some time ago and published on LinkedIn, which can be accessed through this link: [Credit Granting can be used as a proxy for the Financial Cycle, which tends to present a "boom" before the beginning of a recession.](https://www.linkedin.com/feed/update/urn:li:activity:6874875270143209472/)
+
+Based on the study ["The Financial Cycle in Brazil"](https://cmsarquivos.febraban.org.br/Arquivos/documentos/PDF/Paper3_PUC.pdf) carried out in the 3rd Project of the 2018 [Agreement between FEBRABAN (Brazilian Federation of Banks) and PUC - Rio (Pontifical Catholic University of Rio de Janeiro)](https://portal.febraban.org.br/pagina/3252/23/pt-br/convenio-cooperacao-2017-2018), where the authors describe the five main stylized characteristics of the financial cycle based on the work of [Borio (2012)](https://www.bis.org/publ/work395.pdf), which are:
+
+  - Characteristic 1: **it is described more parsimoniously in terms of credit** and real estate prices. 
+  
+  - Characteristic 2: it has a much lower frequency than the traditional business cycle.
+  
+  - Characteristic 3: its peaks are closely associated with financial crises.
+  
+  - Characteristic 4: it helps to detect risks of financial difficulties with a good advantage in real time.
+  
+  - Characteristic 5: its duration and amplitude depend on policy regimes.
+
+
+In this paper, we will focus on seeing only part of the first characteristic, in which the financial cycle is described in a more parsimonious way in terms of credit.
+
+*If you want me to develop part 2 onwards, analyzing the other characteristics, [leave a comment here or in the LinkedIn post at this link](https://www.linkedin.com/posts/hcostax_cr%C3%A9dito-como-proxy-para-ciclos-financeiros-activity-7254526734656544770-hcGr?utm_source=share&utm_medium=member_desktop)*
 
 <br>
 
@@ -978,9 +995,10 @@ Time Series Management System (Brazil Central Bank)  \nElaboração: @hcostax",
 <br>
 
 
+If you are unable to comment here, you can go to the updated post I made on LinkedIn about this article [AT THIS LINK HERE](https://www.linkedin.com/posts/hcostax_cr%C3%A9dito-como-proxy-para-ciclos-financeiros-activity-7254526734656544770-hcGr?utm_source=share&utm_medium=member_desktop). I would really appreciate it if you would like to contribute to the text, or if you have any corrections or adjustments to suggest to me. Thank you very much for your time.
 
 
-
+<br> 
 
 
 ::: callout-note
